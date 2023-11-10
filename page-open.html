@@ -5,551 +5,699 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/fonts.css">
 	<link rel="stylesheet" href="./css/page-open.css">
 	<title>Page open</title>
 </head>
 
 <body>
-	<div class="open-navigate">
-		<a href="#" class='open-navigate__link'>
-			<svg class="open-navigate__svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
-				data-testid="ArrowBackIosIcon">
-				<path d="M11.67 3.87 9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"></path>
-			</svg>
-			Back to Research Reports
-		</a>
-		<div id="scrollbar-horizontal">
-			<div id="scrollbar-thumb-horizontal"></div>
+	<main class='open-page__main'>
+		<div class="open-page__main-bag"></div>
+		<div class="open-navigate">
+			<a href="#" class='open-navigate__link'>
+				<svg class="open-navigate__svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+					data-testid="ArrowBackIosIcon">
+					<path d="M11.67 3.87 9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"></path>
+				</svg>
+				Back to Research Reports
+			</a>
+			<div id="scrollbar-horizontal">
+				<div id="scrollbar-thumb-horizontal"></div>
+			</div>
 		</div>
-	</div>
-	<div class="main-open">
-		<div class="open-left">
-			<div class="open-left__container">
-				<div class="open-left__top">
+		<div class="open-left__top">
+			<div class="container">
+
+				<h1 class='open-left__top-title'>Osmosis Protocol Usage Report Q2 2023</h1>
+				<div class="open-left__top-bottom">
+					<div class="bottom-left">
+						<div class="bottom-left__ava">
+							<img src="./images/page/ava.avif" alt="">
+						</div>
+						<a href='author.html' class="bottom-left__name">John_TotalValue_Locke
+						</a>
+					</div>
+					<div class="bottom-right">
+						Jul 21, 2023 ⋅ 10 min read
+					</div>
 					<div class="open-left__top-tag">
 						<div class="tag">
 							<span>DeFi</span>
 						</div>
 						<div class="tag">Quarterly-Brief</div>
 					</div>
-					<h1 class='open-left__top-title'>Osmosis Protocol Usage Report Q2 2023</h1>
-					<div class="open-left__top-bottom">
-						<div class="bottom-left">
-							<div class="bottom-left__ava">
-								<img src="./images/page/ava.avif" alt="">
-							</div>
-							<a href='author.html' class="bottom-left__name">John_TotalValue_Locke
-							</a>
-						</div>
-						<div class="bottom-right">
-							Jul 21, 2023 ⋅ 10 min read
-						</div>
-					</div>
 				</div>
-				<div class="open-left__content">
-					<div class="key-insights">
-						<h4 class="key-title">Key Insights</h4>
-						<ul class='key-insights__list'>
-							<li class="key-insights__item">Reduced emissions and a subdued market continue to weigh on
-								volumes and users, each down over 25% in Q2.</li>
-							<li class="key-insights__item">The bright spot in the second quarter was IBC transfers,
-								which yielded nearly half a billion dollars in inflows to Osmosis.</li>
-							<li class="key-insights__item">Governance and development remained active, highlighted by
-								the unveiling of OSMO 2.0. The revised tokenomics for the network will reduce inflation
-								and extend the emissions timeline, while also introducing burn and fee switch
-								mechanisms.</li>
-						</ul>
-						<p class='key-insights__subtitle'>Primer on Osmosis</p>
-						<p class='key-insights__quote'>
-							<em>Osmosis is a sovereign decentralized exchange (DEX)-focused app-chain in the Cosmos
-								ecosystem, meaning it simultaneously serves as a blockchain and an application. The
-								application operates similarly to other automated market making (AMM) functioning DEXs –
-								liquidity providers (LPs), which are responsible for supplying liquidity to asset pools
-								where traders can make trades from. It’s the same model for Uniswap or Balancer, though
-								more similar to the latter as Osmosis places a high priority on offering asset pool
-								customization. Tweaks to market-maker functions, swap costs, token weighting, and more
-								are all parameters that can be changed within the DEX. Additionally, Osmosis has
-								introduced new features such as superfluid staking that allows users who provided
-								liquidity in certain pools to also stake to help secure the network. In the future,
-								Osmosis will also offer maximal extractable value (MEV) mitigation and capture, stable
-								pools, and more.</em>
-						</p>
-					</div>
-					<!-- key metrics -->
-					<div class="key-metrics">
-						<h4 class="key-title">Key Metrics</h4>
-						<div class='key-metrics__img'>
-							<img src="./images/open-page/metrics.webp" alt="">
-						</div>
-					</div>
-					<!-- end key metrics -->
-					<!-- dex -->
-					<div class="key-dex">
-						<h4 class="key-title">Protocol Usage</h4>
-						<p class='key-dex__subtitle'>DEX Metrics</p>
-						<div class="key-dex__img">
-							<img src="./images/open-page/dex1.webp" alt="">
-						</div>
-						<p class="key-dex__text">After an increase in volume in Q1, partially brought on by the spike
-							around the USDC depeg, second quarter volumes fell 43% QoQ. The makeup of volumes has been
-							changing, with ATOM volumes falling to 15% of total volume in Q2, its lowest share since
-							ever. USDC made up 14.9% of volume in Q2, its lowest in the last four quarters, which will
-							likely change when native USDC is introduced to the Cosmos network.
-						</p>
-						<div class='key-dex__img'>
-							<img src="./images/open-page/dex2.webp" alt="">
-						</div>
-						<p class="key-dex__text">Despite the increase in the end-of-period liquidity provided on Osmosis
-							Q1, the average daily liquidity has been trending lower since Q1’22. The trend accelerated
-							in Q2’23, with average daily liquidity falling 17.9% from the previous quarter. Depositors
-							remained patient in Q2, as average daily yield from trading fees fell to 3.8% (daily fees
-							per unit of TVL, compounding daily) from 5.6% in Q1. Liquidity providers also earn fees from
-							incentives, which are not included in this yield calculation.</p>
-						<p class='heigh'></p>
-						<p class='key-dex__subtitle'>Network Metrics</p>
-						<div class='key-dex__img'>
-							<img src="./images/open-page/dex3.webp" alt="">
-						</div>
-						<p class="key-dex__text">Transaction counts of every type fell in Q2 but by very different
-							margins. After a busy Q1, governance-related activity saw the largest QoQ decline. Voting
-							and Osmosis staking transactions were down 71% and 55%, respectively, accounting for nearly
-							a third of the fall in transactions counts in the quarter. The smallest percentage decreases
-							were in transactions related to the core product, with IBC transfers and swaps falling only
-							21% and 23%, respectively.</p>
-						<div class='key-dex__img'>
-							<img src="./images/open-page/dex4.webp" alt="">
-						</div>
-						<p class="key-dex__text">After nearly a year of subdued value flows, over $466 million was
-							transferred to Osmosis via the IBC network. Total IBC transfer volume on Osmosis actually
-							fell 4% from the previous quarter to $2.1 billion transferred. April and May were the
-							largest net transfer months for the protocol since the LUNA collapse in May 2022.</p>
-					</div>
-					<!-- end dex -->
-					<!-- key notable -->
-					<div class="key-notable">
-						<h4 class="key-title">Notable Events</h4>
-						<p class="key-notable__subtitle">Osmosis Proposals</p>
-						<ul class='key-notable__list'>
-							<li class="key-notable__item">
-								<a href="#">
-									April 17, 2023
-								</a>
-								, <em>Lengthen OSMO Emission Schedule</em> — Osmosis Proposal 484 aimed to lengthen the
-								OSMO
-								emission schedule to maintain a maximum supply close to the original tokenomic design.
-								[Implemented]
-							</li>
-							<li class="key-notable__item">
-								<a href="#">April 17, 2023</a>
-								, <em>Adjust the Ratio of Emissions</em> — Osmosis Proposal 485 aimed to solve issues
-								related to
-								net yield from staking rewards and larger liquidity pools by adjusting the emission
-								proportions received by each. [Implemented]
-							</li>
-							<li class="key-notable__item">
-								<a href="#">April 17, 2023</a>
-								, <em>Decrease the Superfluid Risk Factor to 25%</em> — Osmosis Proposal 486 aimed to
-								decrease
-								the Superfluid Risk Factor to 25%, allowing 75% of OSMO in Superfluid pools to be
-								staked. [Implemented]
-							</li>
-							<li class="key-notable__item">
-								<a href="#">
-									May 14, 2023
-								</a>
-								, <em>Allow IBCX Contracts to be Uploaded </em> — Osmosis Proposal 504 seeks to allow
-								ION DAO to upload contracts relating to the IBCX project. The proposal includes
-								deploying contract codes for the minting, burning, and rebalancing of IBCX, governed by
-								the ION DAO. IBCX is designed to benchmark the performance of leading Cosmos tokens, and
-								its price is dynamically calculated based on the spot prices of its selected components.
-								[Implemented]
-							</li>
-							<li class="key-notable__item">
-								<a href="#">
-									May 14, 2023
-								</a>
-								, <em>Allow IBCX Contracts to be Uploaded </em> — The Osmosis Grants Program
-								collaborated with Axelar, Akash Network, and others to develop and implement Mesh
-								Security across the Cosmos ecosystem, providing chains increased security. [Pending]
-							</li>
-						</ul>
-						<p class="key-notable__subtitle">Network Releases</p>
-						<ul class='key-notable__list'>
-							<li class="key-notable__item">
-								<a href="#">
-									April 17, 2023
-								</a>
-								, <em>Lengthen OSMO Emission Schedule</em> — Osmosis Proposal 484 aimed to lengthen the
-								OSMO
-								emission schedule to maintain a maximum supply close to the original tokenomic design.
-								[Implemented]
-							</li>
-							<li class="key-notable__item">
-								<a href="#">April 17, 2023</a>
-								, <em>Adjust the Ratio of Emissions</em> — Osmosis Proposal 485 aimed to solve issues
-								related to
-								net yield from staking rewards and larger liquidity pools by adjusting the emission
-								proportions received by each. [Implemented]
-							</li>
-							<li class="key-notable__item">
-								<a href="#">April 17, 2023</a>
-								, <em>Decrease the Superfluid Risk Factor to 25%</em> — Osmosis Proposal 486 aimed to
-								decrease
-								the Superfluid Risk Factor to 25%, allowing 75% of OSMO in Superfluid pools to be
-								staked. [Implemented]
-							</li>
-							<li class="key-notable__item">
-								<a href="#">
-									May 14, 2023
-								</a>
-								, <em>Allow IBCX Contracts to be Uploaded </em> — Osmosis Proposal 504 seeks to allow
-								ION DAO to upload contracts relating to the IBCX project. The proposal includes
-								deploying contract codes for the minting, burning, and rebalancing of IBCX, governed by
-								the ION DAO. IBCX is designed to benchmark the performance of leading Cosmos tokens, and
-								its price is dynamically calculated based on the spot prices of its selected components.
-								[Implemented]
-							</li>
-							<li class="key-notable__item">
-								<a href="#">
-									May 14, 2023
-								</a>
-								, <em>Allow IBCX Contracts to be Uploaded </em> — The Osmosis Grants Program
-								collaborated with Axelar, Akash Network, and others to develop and implement Mesh
-								Security across the Cosmos ecosystem, providing chains increased security. [Pending]
-							</li>
-						</ul>
-					</div>
-					<!-- end key notable -->
-					<div class="heigh"></div>
-					<!-- kye osmo -->
-					<div class="key-osmo">
-						<h4 class="key-title">OSMO 2.0</h4>
-						<p class="key-osmo__text">On June 19, Osmosis shared <a href='#'>details</a> regarding its next
-							development phase, with the release of an updated tokenomics model, OSMO 2.0. The model aims
-							to improve the sustainability of the protocol and better align incentives.</p>
-						<p class="key-osmo__subtitle">Reduced Inflation and Extended Emission Timeline</p>
-						<p class='key-osmo__text'>
-							Osmosis governance has voted to cut the inflation rate by half and lengthen the emission
-							timeline beyond the initially planned mid-June timeframe, alongside the protocol's regular
-							"Thirdening" inflation reduction event. The new schedule aims to enable a "smoother
-							distribution of tokens over an extended period of time."
-						</p>
-						<p class="key-osmo__subtitle">Revised Token Emission Allocation</p>
-						<p class='key-osmo__text'>The protocol will also shift its emission allocation to incentivize
-							long-term stakers. Previously, Osmosis focused on rewarding liquidity providers to stimulate
-							the growth of liquidity. However, the protocol's community has decided to redirect emissions
-							from liquidity providers and the community pool to stakers. This shift is part of Osmosis'
-							strategy to become a "DeFi-centric blockchain," supported by the Supercharged Liquidity
-							feature.</p>
-						<p class="key-osmo__subtitle">Protocol Revenue Burn Mechanism</p>
-						<p class='key-osmo__text'>In January, Osmosis introduced an automated internal liquidity
-							arbitrage mechanism and held the revenue collected from this module in a monitoring wallet.
-							Governance has been considering options for using the generated revenue, including
-							diversifying the Community Pool's holdings, incentivizing more staking, or initiating a burn
-							mechanism.</p>
-						<p class="key-osmo__subtitle">Fee Share Mechanism</p>
-						<p class='key-osmo__text'>
-							Currently, Osmosis allocates 45% of incentives to liquidity providers, while stakers receive
-							25% of the emissions. To rebalance these allocations, Osmosis governance is considering
-							implementing a <a href="">fee switch</a> for liquidity pools. The update would allow OSMO
-							stakers to share
-							in the swap fees generated by activity in Osmosis liquidity pools.
-						</p>
-					</div>
-					<!-- end kye osmo -->
-					<div class="height"></div>
-					<!-- summary -->
-					<div class="key-summary">
-						<h4 class="key-title">Closing Summary</h4>
-						<p class="key-summary__text">The second quarter saw a decline in volume, liquidity, and fees on
-							the Osmosis network. IBC transfers and swap transactions fell the least in percentage terms,
-							and net IBC transfers were over $400 million. In terms of proposals and network releases,
-							Osmosis took numerous steps to not only improve its ecosystem and tokenomic design but also
-							to incentivize users and increase security. The introduction of OSMO 2.0 demonstrates an
-							ongoing commitment to sustainability and better alignment of incentives through measures
-							such as a reduced inflation rate, extended emission timeline, revised token emission
-							allocation, a protocol revenue burn mechanism, and a fee share mechanism. Despite the
-							decrease in key metrics, the network continues to adapt and implement new strategies for its
-							growth.</p>
-						<p class="key-summary__text">
-							<em>Let us know what you loved about the report, what may be missing, or share any other
-								feedback by <a href="#">filling out this short form</a> All responses are subject to our
-								<a href="#">
-									Privacy Policy
-								</a>
-								and <a href="#">Terms of Service.</a></em>
-						</p>
-						<p class="key-summary__text"><em>This report was commissioned by Osmosis Grant Foundation. All
-								content was produced independently by the author(s) and does not necessarily reflect the
-								opinions of Messari, Inc. or the organization that requested the report. The
-								commissioning organization does not influence editorial decision or content. Author(s)
-								may hold cryptocurrencies named in this report. This report is meant for informational
-								purposes only. It is not meant to serve as investment advice. You should conduct your
-								own research, and consult an independent financial, tax, or legal advisor before making
-								any investment decisions. Past performance of any asset is not indicative of future
-								results. Please see our <a href="#">Terms of Service</a> for more information.</em></p>
-						<p class="key-summary__text"><em>No part of this report may be (a) copied, photocopied,
-								duplicated in any form by any means or (b) redistributed without the prior written
-								consent of Messari®.</em></p>
-					</div>
-					<!-- end summary -->
-					<!-- upgrade pro -->
-					<div class="open-upgrade">
-						<h4 class='open-upgrade__title'>Upgrade to <span>Messari Pro</span></h4>
-						<p class="open-upgrade__text">Gain an edge over the market with professional grade tools, data
-							and research.</p>
-						<a href="#" class="open-upgrade__link">Learn more</a>
-						<div class="open-upgrade__bottom">
-							<p>Already a member? </p>
-							<a href="#">Sign in</a>
-						</div>
-						<div class="open-right mob">
-							<div class="open-right__top">
-								<h5 class='open-right__top-subtitle'>About the author</h5>
-								<div class="open-right__top-author">
-									<div class="open-right__top-ava">
-										<img src="./images/page/ava.avif" alt="">
+			</div>
+		</div>
+		<div class="main-open__wrapper">
+			<div class="container">
+				<div class="main-open">
+
+					<div class="open-left">
+						<div class="open-left__container">
+							<div class="open-left__content">
+								<div class="key-insights">
+									<h4 class="key-title">Key Insights</h4>
+									<ul class='key-insights__list'>
+										<li class="key-insights__item">Reduced emissions and a subdued market continue
+											to
+											weigh
+											on
+											volumes and users, each down over 25% in Q2.</li>
+										<li class="key-insights__item">The bright spot in the second quarter was IBC
+											transfers,
+											which yielded nearly half a billion dollars in inflows to Osmosis.</li>
+										<li class="key-insights__item">Governance and development remained active,
+											highlighted
+											by
+											the unveiling of OSMO 2.0. The revised tokenomics for the network will
+											reduce
+											inflation
+											and extend the emissions timeline, while also introducing burn and fee
+											switch
+											mechanisms.</li>
+									</ul>
+									<p class='key-insights__subtitle'>Primer on Osmosis</p>
+									<p class='key-insights__quote'>
+										<em>Osmosis is a sovereign decentralized exchange (DEX)-focused app-chain in the
+											Cosmos
+											ecosystem, meaning it simultaneously serves as a blockchain and an
+											application.
+											The
+											application operates similarly to other automated market making (AMM)
+											functioning
+											DEXs –
+											liquidity providers (LPs), which are responsible for supplying liquidity to
+											asset
+											pools
+											where traders can make trades from. It’s the same model for Uniswap or
+											Balancer,
+											though
+											more similar to the latter as Osmosis places a high priority on offering
+											asset
+											pool
+											customization. Tweaks to market-maker functions, swap costs, token
+											weighting,
+											and
+											more
+											are all parameters that can be changed within the DEX. Additionally, Osmosis
+											has
+											introduced new features such as superfluid staking that allows users who
+											provided
+											liquidity in certain pools to also stake to help secure the network. In the
+											future,
+											Osmosis will also offer maximal extractable value (MEV) mitigation and
+											capture,
+											stable
+											pools, and more.</em>
+									</p>
+								</div>
+								<!-- key metrics -->
+								<div class="key-metrics">
+									<h4 class="key-title">Key Metrics</h4>
+									<div class='key-metrics__img'>
+										<img src="./images/open-page/metrics.webp" alt="">
 									</div>
-									<a href='/author.html' class="open-right__top-name">George Leonardo</a>
 								</div>
-								<p class="open-right__top-text">George Leonardo is the founder of Cap Hill Crypto, a
-									solo-entrepreneur venture focused on providing nonpartisan insights and analysis on
-									U.S. federal
-									crypto policy. Previously, he worked on Capitol Hill for Senator John Cornyn and as
-									a litigation
-									associate at Milbank LLP.</p>
-								<div class="open-right__top-buttons">
-									<button class='button'>12 Reports</button>
-									<button class='button'><svg focusable="false" aria-hidden="true" viewBox="0 0 24 24"
-											data-testid="TwitterIcon">
+								<!-- end key metrics -->
+								<!-- dex -->
+								<div class="key-dex">
+									<h4 class="key-title">Protocol Usage</h4>
+									<p class='key-dex__subtitle'>DEX Metrics</p>
+									<div class="key-dex__img">
+										<img src="./images/open-page/dex1.webp" alt="">
+									</div>
+									<p class="key-dex__text">After an increase in volume in Q1, partially brought on by
+										the
+										spike
+										around the USDC depeg, second quarter volumes fell 43% QoQ. The makeup of
+										volumes
+										has
+										been
+										changing, with ATOM volumes falling to 15% of total volume in Q2, its lowest
+										share
+										since
+										ever. USDC made up 14.9% of volume in Q2, its lowest in the last four quarters,
+										which
+										will
+										likely change when native USDC is introduced to the Cosmos network.
+									</p>
+									<div class='key-dex__img'>
+										<img src="./images/open-page/dex2.webp" alt="">
+									</div>
+									<p class="key-dex__text">Despite the increase in the end-of-period liquidity
+										provided on
+										Osmosis
+										Q1, the average daily liquidity has been trending lower since Q1’22. The trend
+										accelerated
+										in Q2’23, with average daily liquidity falling 17.9% from the previous quarter.
+										Depositors
+										remained patient in Q2, as average daily yield from trading fees fell to 3.8%
+										(daily
+										fees
+										per unit of TVL, compounding daily) from 5.6% in Q1. Liquidity providers also
+										earn
+										fees
+										from
+										incentives, which are not included in this yield calculation.</p>
+									<p class='heigh'></p>
+									<p class='key-dex__subtitle'>Network Metrics</p>
+									<div class='key-dex__img'>
+										<img src="./images/open-page/dex3.webp" alt="">
+									</div>
+									<p class="key-dex__text">Transaction counts of every type fell in Q2 but by very
+										different
+										margins. After a busy Q1, governance-related activity saw the largest QoQ
+										decline.
+										Voting
+										and Osmosis staking transactions were down 71% and 55%, respectively, accounting
+										for
+										nearly
+										a third of the fall in transactions counts in the quarter. The smallest
+										percentage
+										decreases
+										were in transactions related to the core product, with IBC transfers and swaps
+										falling
+										only
+										21% and 23%, respectively.</p>
+									<div class='key-dex__img'>
+										<img src="./images/open-page/dex4.webp" alt="">
+									</div>
+									<p class="key-dex__text">After nearly a year of subdued value flows, over $466
+										million
+										was
+										transferred to Osmosis via the IBC network. Total IBC transfer volume on Osmosis
+										actually
+										fell 4% from the previous quarter to $2.1 billion transferred. April and May
+										were
+										the
+										largest net transfer months for the protocol since the LUNA collapse in May
+										2022.
+									</p>
+								</div>
+								<!-- end dex -->
+								<!-- key notable -->
+								<div class="key-notable">
+									<h4 class="key-title">Notable Events</h4>
+									<p class="key-notable__subtitle">Osmosis Proposals</p>
+									<ul class='key-notable__list'>
+										<li class="key-notable__item">
+											<a href="#">
+												April 17, 2023
+											</a>
+											, <em>Lengthen OSMO Emission Schedule</em> — Osmosis Proposal 484 aimed to
+											lengthen
+											the
+											OSMO
+											emission schedule to maintain a maximum supply close to the original
+											tokenomic
+											design.
+											[Implemented]
+										</li>
+										<li class="key-notable__item">
+											<a href="#">April 17, 2023</a>
+											, <em>Adjust the Ratio of Emissions</em> — Osmosis Proposal 485 aimed to
+											solve
+											issues
+											related to
+											net yield from staking rewards and larger liquidity pools by adjusting the
+											emission
+											proportions received by each. [Implemented]
+										</li>
+										<li class="key-notable__item">
+											<a href="#">April 17, 2023</a>
+											, <em>Decrease the Superfluid Risk Factor to 25%</em> — Osmosis Proposal 486
+											aimed
+											to
+											decrease
+											the Superfluid Risk Factor to 25%, allowing 75% of OSMO in Superfluid pools
+											to
+											be
+											staked. [Implemented]
+										</li>
+										<li class="key-notable__item">
+											<a href="#">
+												May 14, 2023
+											</a>
+											, <em>Allow IBCX Contracts to be Uploaded </em> — Osmosis Proposal 504 seeks
+											to
+											allow
+											ION DAO to upload contracts relating to the IBCX project. The proposal
+											includes
+											deploying contract codes for the minting, burning, and rebalancing of IBCX,
+											governed
+											by
+											the ION DAO. IBCX is designed to benchmark the performance of leading Cosmos
+											tokens,
+											and
+											its price is dynamically calculated based on the spot prices of its selected
+											components.
+											[Implemented]
+										</li>
+										<li class="key-notable__item">
+											<a href="#">
+												May 14, 2023
+											</a>
+											, <em>Allow IBCX Contracts to be Uploaded </em> — The Osmosis Grants Program
+											collaborated with Axelar, Akash Network, and others to develop and implement
+											Mesh
+											Security across the Cosmos ecosystem, providing chains increased security.
+											[Pending]
+										</li>
+									</ul>
+									<p class="key-notable__subtitle">Network Releases</p>
+									<ul class='key-notable__list'>
+										<li class="key-notable__item">
+											<a href="#">
+												April 17, 2023
+											</a>
+											, <em>Lengthen OSMO Emission Schedule</em> — Osmosis Proposal 484 aimed to
+											lengthen
+											the
+											OSMO
+											emission schedule to maintain a maximum supply close to the original
+											tokenomic
+											design.
+											[Implemented]
+										</li>
+										<li class="key-notable__item">
+											<a href="#">April 17, 2023</a>
+											, <em>Adjust the Ratio of Emissions</em> — Osmosis Proposal 485 aimed to
+											solve
+											issues
+											related to
+											net yield from staking rewards and larger liquidity pools by adjusting the
+											emission
+											proportions received by each. [Implemented]
+										</li>
+										<li class="key-notable__item">
+											<a href="#">April 17, 2023</a>
+											, <em>Decrease the Superfluid Risk Factor to 25%</em> — Osmosis Proposal 486
+											aimed
+											to
+											decrease
+											the Superfluid Risk Factor to 25%, allowing 75% of OSMO in Superfluid pools
+											to
+											be
+											staked. [Implemented]
+										</li>
+										<li class="key-notable__item">
+											<a href="#">
+												May 14, 2023
+											</a>
+											, <em>Allow IBCX Contracts to be Uploaded </em> — Osmosis Proposal 504 seeks
+											to
+											allow
+											ION DAO to upload contracts relating to the IBCX project. The proposal
+											includes
+											deploying contract codes for the minting, burning, and rebalancing of IBCX,
+											governed
+											by
+											the ION DAO. IBCX is designed to benchmark the performance of leading Cosmos
+											tokens,
+											and
+											its price is dynamically calculated based on the spot prices of its selected
+											components.
+											[Implemented]
+										</li>
+										<li class="key-notable__item">
+											<a href="#">
+												May 14, 2023
+											</a>
+											, <em>Allow IBCX Contracts to be Uploaded </em> — The Osmosis Grants Program
+											collaborated with Axelar, Akash Network, and others to develop and implement
+											Mesh
+											Security across the Cosmos ecosystem, providing chains increased security.
+											[Pending]
+										</li>
+									</ul>
+								</div>
+								<!-- end key notable -->
+								<div class="heigh"></div>
+								<!-- kye osmo -->
+								<div class="key-osmo">
+									<h4 class="key-title">OSMO 2.0</h4>
+									<p class="key-osmo__text">On June 19, Osmosis shared <a href='#'>details</a>
+										regarding
+										its
+										next
+										development phase, with the release of an updated tokenomics model, OSMO 2.0.
+										The
+										model
+										aims
+										to improve the sustainability of the protocol and better align incentives.</p>
+									<p class="key-osmo__subtitle">Reduced Inflation and Extended Emission Timeline</p>
+									<p class='key-osmo__text'>
+										Osmosis governance has voted to cut the inflation rate by half and lengthen the
+										emission
+										timeline beyond the initially planned mid-June timeframe, alongside the
+										protocol's
+										regular
+										"Thirdening" inflation reduction event. The new schedule aims to enable a
+										"smoother
+										distribution of tokens over an extended period of time."
+									</p>
+									<p class="key-osmo__subtitle">Revised Token Emission Allocation</p>
+									<p class='key-osmo__text'>The protocol will also shift its emission allocation to
+										incentivize
+										long-term stakers. Previously, Osmosis focused on rewarding liquidity providers
+										to
+										stimulate
+										the growth of liquidity. However, the protocol's community has decided to
+										redirect
+										emissions
+										from liquidity providers and the community pool to stakers. This shift is part
+										of
+										Osmosis'
+										strategy to become a "DeFi-centric blockchain," supported by the Supercharged
+										Liquidity
+										feature.</p>
+									<p class="key-osmo__subtitle">Protocol Revenue Burn Mechanism</p>
+									<p class='key-osmo__text'>In January, Osmosis introduced an automated internal
+										liquidity
+										arbitrage mechanism and held the revenue collected from this module in a
+										monitoring
+										wallet.
+										Governance has been considering options for using the generated revenue,
+										including
+										diversifying the Community Pool's holdings, incentivizing more staking, or
+										initiating a
+										burn
+										mechanism.</p>
+									<p class="key-osmo__subtitle">Fee Share Mechanism</p>
+									<p class='key-osmo__text'>
+										Currently, Osmosis allocates 45% of incentives to liquidity providers, while
+										stakers
+										receive
+										25% of the emissions. To rebalance these allocations, Osmosis governance is
+										considering
+										implementing a <a href="">fee switch</a> for liquidity pools. The update would
+										allow
+										OSMO
+										stakers to share
+										in the swap fees generated by activity in Osmosis liquidity pools.
+									</p>
+								</div>
+								<!-- end kye osmo -->
+								<div class="height"></div>
+								<!-- summary -->
+								<div class="key-summary">
+									<h4 class="key-title">Closing Summary</h4>
+									<p class="key-summary__text">The second quarter saw a decline in volume, liquidity,
+										and
+										fees
+										on
+										the Osmosis network. IBC transfers and swap transactions fell the least in
+										percentage
+										terms,
+										and net IBC transfers were over $400 million. In terms of proposals and network
+										releases,
+										Osmosis took numerous steps to not only improve its ecosystem and tokenomic
+										design
+										but
+										also
+										to incentivize users and increase security. The introduction of OSMO 2.0
+										demonstrates an
+										ongoing commitment to sustainability and better alignment of incentives through
+										measures
+										such as a reduced inflation rate, extended emission timeline, revised token
+										emission
+										allocation, a protocol revenue burn mechanism, and a fee share mechanism.
+										Despite
+										the
+										decrease in key metrics, the network continues to adapt and implement new
+										strategies
+										for
+										its
+										growth.</p>
+									<p class="key-summary__text">
+										<em>Let us know what you loved about the report, what may be missing, or share
+											any
+											other
+											feedback by <a href="#">filling out this short form</a> All responses are
+											subject to
+											our
+											<a href="#">
+												Privacy Policy
+											</a>
+											and <a href="#">Terms of Service.</a></em>
+									</p>
+									<p class="key-summary__text"><em>This report was commissioned by Osmosis Grant
+											Foundation.
+											All
+											content was produced independently by the author(s) and does not necessarily
+											reflect
+											the
+											opinions of Messari, Inc. or the organization that requested the report. The
+											commissioning organization does not influence editorial decision or content.
+											Author(s)
+											may hold cryptocurrencies named in this report. This report is meant for
+											informational
+											purposes only. It is not meant to serve as investment advice. You should
+											conduct
+											your
+											own research, and consult an independent financial, tax, or legal advisor
+											before
+											making
+											any investment decisions. Past performance of any asset is not indicative of
+											future
+											results. Please see our <a href="#">Terms of Service</a> for more
+											information.</em>
+									</p>
+									<p class="key-summary__text"><em>No part of this report may be (a) copied,
+											photocopied,
+											duplicated in any form by any means or (b) redistributed without the prior
+											written
+											consent of Messari®.</em></p>
+								</div>
+								<!-- end summary -->
+								<!-- upgrade pro -->
+								<div class="open-upgrade">
+									<img class='open-upgrade__image' src="/images/banner-page-open.png" alt="">
+									<div class="open-upgrade__inner">
+										<h6 class="open-upgrade__title">Upgrade to <span>Cryptonomy Pro</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="25" height="16"
+												viewBox="0 0 25 16" fill="none">
+												<path
+													d="M24.4692 1.44854C24.3876 1.24518 24.6164 0.601886 24.4692 0.448536C24.4452 0.423534 23.4932 0.470205 23.4692 0.448536C23.338 0.326856 23.6356 0.518544 23.4692 0.448536C23.2948 0.373528 22.6548 0.45687 22.4692 0.448536C22.4452 0.448536 22.4932 0.448536 22.4692 0.448536H18.4692C17.586 0.448536 16.4692 1.52844 16.4692 2.44854C16.4692 3.36864 17.586 3.44854 18.4692 3.44854H19.4692L13.4692 9.44854L10.4692 7.44854C9.22116 6.1584 7.71249 6.15173 6.46922 7.44854L0.469224 12.4485C-0.156408 13.1003 -0.156408 14.7968 0.469224 15.4485C0.781239 15.7736 2.0596 15.4485 2.46922 15.4485C2.87884 15.4485 3.15721 15.7736 3.46922 15.4485L8.46922 9.44854L11.4692 12.4485C12.7221 13.742 14.226 13.7487 15.4692 12.4485L21.4692 6.44854V7.44854C21.4692 8.36864 21.586 8.44854 22.4692 8.44854C23.3525 8.44854 24.4692 8.36864 24.4692 7.44854V2.44854C24.4692 2.23185 24.5492 1.65189 24.4692 1.44854Z"
+													fill="#FFE014" />
+											</svg>
+										</h6>
+										<p class="open-upgrade__text">Gain an edge over the market with professional
+											grade
+											tools,
+											data
+											and research.</p>
+										<a href="#" class="open-upgrade__link">Learn more</a>
+									</div>
+								</div>
+								<div class="open-right mob">
+									<div class="open-right__top">
+										<h5 class='open-right__top-subtitle'>About the author</h5>
+										<div class="open-right__top-author">
+											<div class="open-right__top-ava">
+												<img src="./images/page/ava.avif" alt="">
+											</div>
+											<a href='/author.html' class="open-right__top-name">George Leonardo</a>
+										</div>
+										<p class="open-right__top-text">George Leonardo is the founder of Cap Hill
+											Crypto, a
+											solo-entrepreneur venture focused on providing nonpartisan insights and
+											analysis
+											on
+											U.S. federal
+											crypto policy. Previously, he worked on Capitol Hill for Senator John
+											Cornyn
+											and
+											as
+											a litigation
+											associate at Milbank LLP.</p>
+										<div class="open-right__top-buttons">
+											<button class='button'>12 Reports</button>
+											<button class='button'><svg focusable="false" aria-hidden="true"
+													viewBox="0 0 24 24" data-testid="TwitterIcon">
+													<path
+														d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z">
+													</path>
+												</svg>CapHillCrypto</button>
+										</div>
+									</div>
+									<div class="open-right__content">
+										<h6 class="open-right__content-title">Mentioned in this report</h6>
+										<div class="open-right__content-buttons">
+											<a href="#" class="open-right__content-link">
+												<button class="open-right__content-button">
+													<span class="open-right__content-svg"><img
+															src="https://asset-images.messari.io/images/75ddc87c-c524-412d-ab92-a98def9152f4/64.png?v=2"
+															class="MuiAvatar-img css-1hy9t21">
+													</span>
+													<h6 class="open-right__content-button-title">OSMO</h6>
+													<h6 class="open-right__content-button-price">$0.507</h6>
+													<h6 class="open-right__content-button-procent low">-5.52%</h6>
+												</button>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- end upgrade pro -->
+								<!-- open report -->
+								<div class="open-report">
+									<h6 class="open-report__subtitle">Read more</h6>
+									<h4 class="open-report__title">Research Reports</h4>
+									<div class="open-report__box">
+										<!-- 1 -->
+										<a href='#' class="open-report__item">
+											<div class="open-report__item-tag">
+												<p class='pro'><svg class='open-report__item-svg' focusable="false"
+														aria-hidden="true" viewBox="0 0 24 24" data-testid="LockIcon">
+														<path
+															d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z">
+														</path>
+													</svg>
+													<span>Pro</span>
+												</p>
+												<p>Policy</p>
+											</div>
+											<h6 class="open-report__item-title">The Week in Crypto Policy:
+												Decentralization
+												&
+												Policy
+												Considerations</h6>
+											<div class="open-report__item-bottom">
+												<p class="open-report__item-date">Nov 3, 2023</p>
+											</div>
+										</a>
+										<!-- 2 -->
+										<a href='#' class="open-report__item">
+											<div class="open-report__item-tag">
+												<p class='pro'><svg class='open-report__item-svg' focusable="false"
+														aria-hidden="true" viewBox="0 0 24 24" data-testid="LockIcon">
+														<path
+															d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z">
+														</path>
+													</svg>
+													<span>Pro</span>
+												</p>
+												<p>Policy</p>
+											</div>
+											<h6 class="open-report__item-title">Spoiler Alert – Coinbase Q3 Revenue
+												Estimates
+											</h6>
+											<div class="open-report__item-bottom">
+												<p class="open-report__item-date">Nov 3, 2023</p>
+											</div>
+										</a>
+										<!-- 3 -->
+										<a href='#' class="open-report__item">
+											<div class="open-report__item-tag">
+												<p class='pro'><svg class='open-report__item-svg' focusable="false"
+														aria-hidden="true" viewBox="0 0 24 24" data-testid="LockIcon">
+														<path
+															d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z">
+														</path>
+													</svg>
+													<span>Pro</span>
+												</p>
+												<p>Policy</p>
+											</div>
+											<h6 class="open-report__item-title">The Week in Crypto Policy:
+												Decentralization
+												&
+												Policy
+												Considerations</h6>
+											<div class="open-report__item-bottom">
+												<p class="open-report__item-date">Nov 3, 2023</p>
+											</div>
+										</a>
+										<!-- 4 -->
+										<a href='#' class="open-report__item">
+											<div class="open-report__item-tag">
+												<p class='pro'><svg class='open-report__item-svg' focusable="false"
+														aria-hidden="true" viewBox="0 0 24 24" data-testid="LockIcon">
+														<path
+															d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z">
+														</path>
+													</svg>
+													<span>Pro</span>
+												</p>
+												<p>Policy</p>
+											</div>
+											<h6 class="open-report__item-title">The Week in Crypto Policy:
+												Decentralization
+												&
+												Policy
+												Considerations</h6>
+											<div class="open-report__item-bottom">
+												<p class="open-report__item-date">Nov 3, 2023</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<!-- end open report -->
+								<!-- open watchlist -->
+								<div class="key-watchlist">
+									<h6 class="key-watchlist__subtitle">Read more</h6>
+									<h4 class="key-watchlist__title">Based on your watchlists <svg
+											class="key-watchlist__tyltip" focusable="false" aria-hidden="true"
+											viewBox="0 0 24 24" data-testid="InfoOutlinedIcon">
 											<path
-												d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z">
+												d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
 											</path>
-										</svg>CapHillCrypto</button>
-								</div>
-							</div>
-							<div class="open-right__content">
-								<h6 class="open-right__content-title">Mentioned in this report</h6>
-								<div class="open-right__content-buttons">
-									<a href="#" class="open-right__content-link">
-										<button class="open-right__content-button">
-											<span class="open-right__content-svg"><img
-													src="https://asset-images.messari.io/images/75ddc87c-c524-412d-ab92-a98def9152f4/64.png?v=2"
-													class="MuiAvatar-img css-1hy9t21">
-											</span>
-											<h6 class="open-right__content-button-title">OSMO</h6>
-											<h6 class="open-right__content-button-price">$0.507</h6>
-											<h6 class="open-right__content-button-procent low">-5.52%</h6>
-										</button>
+										</svg></h4>
+									<a href="#" class='key-watchlist__link'>
+										Create a new watchlist
 									</a>
 								</div>
+								<!-- end open watchlist -->
 							</div>
 						</div>
 					</div>
-					<!-- end upgrade pro -->
-					<!-- open report -->
-					<div class="open-report">
-						<h6 class="open-report__subtitle">Read more</h6>
-						<h4 class="open-report__title">Research Reports</h4>
-						<div class="open-report__box">
-							<!-- 1 -->
-							<a href='#' class="open-report__item">
-								<h6 class="open-report__item-title">The Week in Crypto Policy: Decentralization & Policy
-									Considerations</h6>
-								<div class="open-report__item-bottom">
-									<div class="open-report__item-tag">
-										<p><svg class='open-report__item-svg' focusable="false" aria-hidden="true"
-												viewBox="0 0 24 24" data-testid="LockIcon">
-												<path
-													d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z">
-												</path>
-											</svg>
-											<span>Pro</span>
-										</p>
-										<p>Policy</p>
-									</div>
-									<p class="open-report__item-date">Nov 3, 2023</p>
+					<div class="open-right">
+						<div class="open-right__top">
+							<h5 class='open-right__top-subtitle'>About the author</h5>
+							<div class="open-right__top-author">
+								<div class="open-right__top-ava">
+									<img src="./images/page/ava.avif" alt="">
 								</div>
-							</a>
-							<!-- 2 -->
-							<a href='#' class="open-report__item">
-								<h6 class="open-report__item-title">Spoiler Alert – Coinbase Q3 Revenue Estimates</h6>
-								<div class="open-report__item-bottom">
-									<div class="open-report__item-tag">
-										<p><svg class='open-report__item-svg' focusable="false" aria-hidden="true"
-												viewBox="0 0 24 24" data-testid="LockIcon">
-												<path
-													d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z">
-												</path>
-											</svg>
-											<span>Pro</span>
-										</p>
-										<p>Policy</p>
-									</div>
-									<p class="open-report__item-date">Nov 3, 2023</p>
-								</div>
-							</a>
-							<!-- 3 -->
-							<a href='#' class="open-report__item">
-								<h6 class="open-report__item-title">The Week in Crypto Policy: Decentralization & Policy
-									Considerations</h6>
-								<div class="open-report__item-bottom">
-									<div class="open-report__item-tag">
-										<p><svg class='open-report__item-svg' focusable="false" aria-hidden="true"
-												viewBox="0 0 24 24" data-testid="LockIcon">
-												<path
-													d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z">
-												</path>
-											</svg>
-											<span>Pro</span>
-										</p>
-										<p>Policy</p>
-									</div>
-									<p class="open-report__item-date">Nov 3, 2023</p>
-								</div>
-							</a>
-							<!-- 4 -->
-							<a href='#' class="open-report__item">
-								<h6 class="open-report__item-title">The Week in Crypto Policy: Decentralization & Policy
-									Considerations</h6>
-								<div class="open-report__item-bottom">
-									<div class="open-report__item-tag">
-										<p><svg class='open-report__item-svg' focusable="false" aria-hidden="true"
-												viewBox="0 0 24 24" data-testid="LockIcon">
-												<path
-													d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z">
-												</path>
-											</svg>
-											<span>Pro</span>
-										</p>
-										<p>Policy</p>
-									</div>
-									<p class="open-report__item-date">Nov 3, 2023</p>
-								</div>
-							</a>
-							<!-- 5 -->
-							<a href='#' class="open-report__item">
-								<h6 class="open-report__item-title">The Week in Crypto Policy: Decentralization & Policy
-									Considerations</h6>
-								<div class="open-report__item-bottom">
-									<div class="open-report__item-tag">
-										<p><svg class='open-report__item-svg' focusable="false" aria-hidden="true"
-												viewBox="0 0 24 24" data-testid="LockIcon">
-												<path
-													d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z">
-												</path>
-											</svg>
-											<span>Pro</span>
-										</p>
-										<p>Policy</p>
-									</div>
-									<p class="open-report__item-date">Nov 3, 2023</p>
-								</div>
-							</a>
-							<!-- 6 -->
-							<a href='#' class="open-report__item">
-								<h6 class="open-report__item-title">State of Polkadot Q3 2023</h6>
-								<div class="open-report__item-bottom">
-									<div class="open-report__item-tag">
-										<p>Quarterly Reports
-										</p>
-										<p>Layer-1</p>
-									</div>
-									<p class="open-report__item-date">Nov 3, 2023</p>
-								</div>
-							</a>
-							<!-- 7 -->
-							<a href='#' class="open-report__item">
-								<h6 class="open-report__item-title">0x Q3 2023 Brief</h6>
-								<div class="open-report__item-bottom">
-									<div class="open-report__item-tag">
-										<p>DeFi
-										</p>
-										<p>Protocol Overview</p>
-									</div>
-									<p class="open-report__item-date">Nov 2, 2023</p>
-								</div>
-							</a>
-							<!-- 8 -->
-							<a href='#' class="open-report__item">
-								<h6 class="open-report__item-title">State of Goldfinch Q3 2023</h6>
-								<div class="open-report__item-bottom">
-									<div class="open-report__item-tag">
-										<p>
-											Protocol Overview
-										</p>
-										<p>Quarterly Reports</p>
-									</div>
-									<p class="open-report__item-date">Nov 2, 2023</p>
-								</div>
-							</a>
+								<a href='/author.html' class="open-right__top-name">George Leonardo</a>
+							</div>
+							<p class="open-right__top-text">George Leonardo is the founder of Cap Hill Crypto, a
+								solo-entrepreneur venture focused on providing nonpartisan insights and analysis on U.S.
+								federal
+								crypto policy. Previously, he worked on Capitol Hill for Senator John Cornyn and as a
+								litigation
+								associate at Milbank LLP.</p>
+							<div class="open-right__top-buttons">
+								<button class='button'>12 Reports</button>
+								<button class='button'><svg focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+										data-testid="TwitterIcon">
+										<path
+											d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z">
+										</path>
+									</svg>CapHillCrypto</button>
+							</div>
+						</div>
+						<div class="open-right__content">
+							<h6 class="open-right__content-title">Mentioned in this report</h6>
+							<div class="open-right__content-buttons">
+								<a href="#" class="open-right__content-link">
+									<button class="open-right__content-button">
+										<span class="open-right__content-svg"><img
+												src="https://asset-images.messari.io/images/75ddc87c-c524-412d-ab92-a98def9152f4/64.png?v=2"
+												class="MuiAvatar-img css-1hy9t21">
+										</span>
+										<h6 class="open-right__content-button-title">OSMO</h6>
+										<h6 class="open-right__content-button-price">$0.507</h6>
+										<h6 class="open-right__content-button-procent low">-5.52%</h6>
+									</button>
+								</a>
+							</div>
 						</div>
 					</div>
-					<!-- end open report -->
-					<!-- open watchlist -->
-					<div class="key-watchlist">
-						<h6 class="key-watchlist__subtitle">Read more</h6>
-						<h4 class="key-watchlist__title">Based on your watchlists <svg class="key-watchlist__tyltip"
-								focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="InfoOutlinedIcon">
-								<path
-									d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
-								</path>
-							</svg></h4>
-						<a href="#" class='key-watchlist__link'>
-							<svg class="key-watchlist__svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
-								data-testid="AddBoxIcon">
-								<path
-									d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z">
-								</path>
-							</svg>
-							Create a new watchlist
-						</a>
-					</div>
-					<!-- end open watchlist -->
 				</div>
 			</div>
 		</div>
-		<div class="open-right">
-			<div class="open-right__top">
-				<h5 class='open-right__top-subtitle'>About the author</h5>
-				<div class="open-right__top-author">
-					<div class="open-right__top-ava">
-						<img src="./images/page/ava.avif" alt="">
-					</div>
-					<a href='/author.html' class="open-right__top-name">George Leonardo</a>
-				</div>
-				<p class="open-right__top-text">George Leonardo is the founder of Cap Hill Crypto, a
-					solo-entrepreneur venture focused on providing nonpartisan insights and analysis on U.S. federal
-					crypto policy. Previously, he worked on Capitol Hill for Senator John Cornyn and as a litigation
-					associate at Milbank LLP.</p>
-				<div class="open-right__top-buttons">
-					<button class='button'>12 Reports</button>
-					<button class='button'><svg focusable="false" aria-hidden="true" viewBox="0 0 24 24"
-							data-testid="TwitterIcon">
-							<path
-								d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z">
-							</path>
-						</svg>CapHillCrypto</button>
-				</div>
-			</div>
-			<div class="open-right__content">
-				<h6 class="open-right__content-title">Mentioned in this report</h6>
-				<div class="open-right__content-buttons">
-					<a href="#" class="open-right__content-link">
-						<button class="open-right__content-button">
-							<span class="open-right__content-svg"><img
-									src="https://asset-images.messari.io/images/75ddc87c-c524-412d-ab92-a98def9152f4/64.png?v=2"
-									class="MuiAvatar-img css-1hy9t21">
-							</span>
-							<h6 class="open-right__content-button-title">OSMO</h6>
-							<h6 class="open-right__content-button-price">$0.507</h6>
-							<h6 class="open-right__content-button-procent low">-5.52%</h6>
-						</button>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
+	</main>
 	<script src="js/open-page.js"></script>
 </body>
 
