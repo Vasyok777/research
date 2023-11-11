@@ -97,6 +97,9 @@ body {
 	font-size: 0.8125rem;
 	line-height: 1.75;
 	z-index: 3;
+	@media (max-width: 1200px) {
+		padding: 0 1rem;
+	}
 	&__svg {
 		vertical-align: sub;
 		width: 1rem;

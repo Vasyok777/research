@@ -242,6 +242,9 @@ body.lock {
 						font-size: 0.875rem;
 						font-weight: 400;
 						line-height: 1.5;
+						&::placeholder {
+							font-family: SF;
+						}
 					}
 				}
 			}
@@ -343,7 +346,6 @@ body.lock {
 				margin-left: 8px;
 				font-size: 0.875rem;
 				font-weight: 400;
-				font-family: Avenir, system-ui, sans-serif;
 				line-height: 1.5;
 				background-color: rgb(22, 24, 29);
 				border: none;
@@ -369,6 +371,7 @@ body.lock {
 				width: 260px;
 				height: 64px;
 				flex-shrink: 0;
+				font-family: inherit;
 				@media (max-width: 1200px) {
 					width: 150px;
 				}
@@ -499,7 +502,7 @@ body.lock {
 					border-radius: 6px;
 					overflow: hidden auto;
 					outline: 0px;
-					z-index: 1;
+					z-index: 5;
 					top: 87px;
 					// right: 22vw;
 					background: #fff;
@@ -515,7 +518,6 @@ body.lock {
 						border-top-right-radius: 4px;
 						color: #f3f4f6;
 						font-size: 0.875rem;
-						font-family: Avenir, system-ui, sans-serif;
 						font-weight: 400;
 						line-height: 1.5;
 						border-bottom: 1px solid #ececec;
@@ -570,7 +572,6 @@ body.lock {
 								width: 300px;
 								font-size: 0.875rem;
 								font-weight: 400;
-								font-family: Avenir, system-ui, sans-serif;
 								line-height: 1.5;
 								color: rgb(146, 153, 170);
 								margin-bottom: 24px;
@@ -615,7 +616,6 @@ body.lock {
 							color: inherit;
 							font-size: 0.875rem;
 							font-weight: 400;
-							font-family: Avenir, system-ui, sans-serif;
 							display: flex;
 							-webkit-box-pack: start;
 							justify-content: flex-start;
@@ -714,8 +714,9 @@ body.lock {
 					flex-shrink: 0;
 					transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 					font-size: 1.5rem;
-					color: rgb(146, 153, 170);
+					color: #000;
 					display: block;
+					fill: #000;
 				}
 			}
 		}
@@ -957,7 +958,6 @@ body.lock {
 			font-size: 2rem;
 			letter-spacing: -0.06em;
 			font-weight: 600;
-			font-family: Avenir, system-ui, sans-serif;
 			line-height: 115%;
 			margin: 8px 0px 20px;
 			color: #fff;
@@ -1038,7 +1038,6 @@ body.lock {
 			margin: 0px 4px 0px 0px;
 			font-size: 0.875rem;
 			font-weight: 400;
-			font-family: Avenir, system-ui, sans-serif;
 			line-height: 1.5;
 			display: inline-block;
 			color: rgb(146, 153, 170);
@@ -1050,7 +1049,6 @@ body.lock {
 			font-size: 2rem;
 			letter-spacing: -0.06em;
 			font-weight: 600;
-			font-family: Avenir, system-ui, sans-serif;
 			line-height: 115%;
 			margin: 8px 0px 20px;
 			color: #fff;
@@ -1112,6 +1110,10 @@ body.lock {
 	width: 100%;
 	overflow-x: auto;
 	display: none;
+	padding: 0 16px;
+	@media (max-width: 900px) {
+		display: none !important;
+	}
 }
 #selected-author {
 	color: #000;
@@ -1127,6 +1129,9 @@ body.lock {
 		width: 100%;
 		border-spacing: 0px;
 		border-collapse: separate;
+		padding: 40px 50px;
+		background: #fff;
+		border-radius: 32px 32px 0 0;
 	}
 	&-thead {
 		display: table-header-group;
@@ -1141,10 +1146,6 @@ body.lock {
 				display: table-cell;
 				vertical-align: inherit;
 				text-align: left;
-				color: rgb(243, 244, 246);
-				border-color: rgb(41, 47, 56);
-				border-style: solid;
-				border-width: 0px 1px 0px 0px;
 				min-width: 130px;
 				overflow: hidden;
 				padding: 0px 12px;
@@ -1156,18 +1157,24 @@ body.lock {
 				font-weight: 500;
 				-webkit-box-align: stretch;
 				align-items: stretch;
-				background-color: rgb(8, 10, 12);
-				border-bottom: 1px solid rgb(41, 47, 56);
 				height: 56px;
 				line-height: 1;
 				overflow: hidden;
-				text-transform: uppercase;
+				text-transform: capitalize;
+				border-bottom: 1px solid #ececec;
+				color: var(--root-faint-on-light, #8a93a6);
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 24px; /* 171.429% */
+				letter-spacing: 0.28px;
 				&.thead__title {
 					padding: 0px 12px;
 					text-overflow: ellipsis;
 					position: sticky;
 					left: 0px;
-					z-index: 1;
+					z-index: 3;
+					background: #fff;
 				}
 			}
 		}
@@ -1180,47 +1187,55 @@ body.lock {
 			display: table-row;
 			vertical-align: middle;
 			outline: 0px;
-			&:nth-of-type(2n + 1) td {
-				background-color: rgb(22, 24, 29);
-			}
 			& td {
+				border-bottom: 1px solid #ececec;
 				font-size: 0.875rem;
 				font-weight: 400;
-				font-family: Avenir, system-ui, sans-serif;
-				height: 38px;
 				line-height: 1;
 				white-space: nowrap;
-				background-color: rgb(8, 10, 12);
-				padding: 0px 16px;
+				padding: 24px 16px;
 				vertical-align: inherit;
 				text-align: left;
-				color: rgb(243, 244, 246);
-				border-color: rgb(41, 47, 56);
-				border-style: solid;
-				border-width: 0px 1px 0px 0px;
+				&:nth-child {
+					border-bottom: 1px solid #ececec;
+				}
 			}
 			& .tbody__element {
-				color: #fff;
 				display: table-cell;
 				vertical-align: inherit;
 				text-align: left;
-				color: rgb(243, 244, 246);
 				padding: 0px 20px;
+				&.tbody__date {
+					color: var(--root-faint-on-light, #8a93a6);
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 24px; /* 171.429% */
+					letter-spacing: 0.28px;
+				}
 				&-tag {
-					color: #9299aa;
-					height: initial;
-					padding: 4px 8px;
-					font-size: 0.7rem;
-					font-weight: 600;
-					margin-right: 8px;
-					border-radius: 4px;
-					text-transform: uppercase;
-					background-color: #292f38;
+					border-radius: 48px;
+					border: 1px solid var(--gray-100, #ececec);
+					background: var(--white, #fff);
+					display: flex;
+					padding: 2px 11px;
+					justify-content: flex-end;
+					align-items: center;
+					gap: 4px;
+					width: max-content;
+					color: var(--black, #000);
+					font-size: 12px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 20px; /* 166.667% */
+					letter-spacing: 0.24px;
 				}
 				&.flex {
 					display: flex;
 					gap: 8px;
 					align-items: center;
+					padding: 26px 16px;
+					color: #000;
 					& .flex__img {
 						width: 20px;
 						height: 20px;
@@ -1240,8 +1255,6 @@ body.lock {
 					-webkit-box-pack: center;
 					justify-content: center;
 					height: 24px;
-					color: rgb(243, 244, 246);
-					background-color: rgba(255, 255, 255, 0.16);
 					border-radius: 16px;
 					white-space: nowrap;
 					transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
@@ -1255,8 +1268,6 @@ body.lock {
 					box-sizing: border-box;
 					cursor: pointer;
 					padding: 4px 4px;
-					color: #fff;
-					height: initial;
 					font-size: 10px;
 					font-weight: 600;
 					text-transform: uppercase;
@@ -1272,11 +1283,27 @@ body.lock {
 						padding-right: 8px;
 					}
 					&.enterprise {
-						background-color: rgb(0, 145, 234);
+						background-color: #00b881;
+						color: var(--black, #fff);
+						font-size: 12px;
+						font-style: normal;
+						font-weight: 500;
+						line-height: 20px;
+						letter-spacing: 0.24px;
+						& svg {
+							fill: #fff;
+						}
 					}
 					&.pro {
-						background-color: rgb(241, 152, 55);
+						background-color: #ffe014;
+						color: var(--black, #000);
+						font-size: 12px;
+						font-style: normal;
+						font-weight: 500;
+						line-height: 20px;
+						letter-spacing: 0.24px;
 						& svg {
+							fill: #000;
 						}
 					}
 				}
@@ -1286,8 +1313,13 @@ body.lock {
 				position: sticky;
 				left: 0px;
 				z-index: 1;
+				background-color: #fff;
 				& a {
-					color: rgb(39, 142, 218);
+					color: var(--root-base-on-light, #06070b);
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 24px;
 					text-decoration: none;
 					cursor: pointer;
 				}
@@ -1401,7 +1433,6 @@ body.lock {
 				vertical-align: middle;
 				appearance: none;
 				text-decoration: none;
-				font-family: Avenir, system-ui, sans-serif;
 				font-weight: 500;
 				font-size: 0.875rem;
 				padding: 6px 8px;
@@ -1489,7 +1520,6 @@ body.lock {
 				vertical-align: middle;
 				appearance: none;
 				text-decoration: none;
-				font-family: Avenir, system-ui, sans-serif;
 				line-height: 1.75;
 				padding: 6px 8px;
 				transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,

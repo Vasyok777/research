@@ -100,6 +100,11 @@ body {
   font-size: 0.8125rem;
   line-height: 1.75;
 }
+@media (max-width: 1200px) {
+  .private-navigate {
+    padding: 0 1rem;
+  }
+}
 .private-navigate__svg {
   vertical-align: sub;
   width: 1rem;
