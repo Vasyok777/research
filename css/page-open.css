@@ -96,10 +96,7 @@ body {
   font-weight: 500;
   font-size: 0.8125rem;
   line-height: 1.75;
-  position: sticky;
-  top: 0px;
   z-index: 3;
-  background: linear-gradient(13deg, #82c6c0 -27.46%, #96bbf2 91.61%);
 }
 .open-navigate__svg {
   vertical-align: sub;
@@ -109,7 +106,6 @@ body {
 }
 .open-navigate__link {
   color: #000;
-  font-family: SF Pro Display;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -158,7 +154,7 @@ body {
 }
 .open-left__top-tag .tag {
   color: rgb(143, 179, 196);
-  padding: 4px 8px 2px;
+  padding: 2px 8px 2px;
   background-color: rgb(22, 24, 29);
   border-radius: 8px;
   margin: 0px;
@@ -176,7 +172,6 @@ body {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px;
   letter-spacing: 0.24px;
 }
 .open-left__top-tag .tag svg {
@@ -256,7 +251,7 @@ body {
   flex-shrink: 0;
   height: 100vh;
   position: sticky;
-  top: 48px;
+  top: 0px;
 }
 .open-right.mob {
   display: none;
@@ -370,7 +365,7 @@ body {
   font-size: 0.8125rem;
   line-height: 1.75;
   min-width: 64px;
-  padding: 3px 9px;
+  padding: 5px 8px 3px;
   border-radius: 4px;
   background-color: transparent;
   border: 1px solid rgb(0, 184, 129);
@@ -379,6 +374,7 @@ body {
   gap: 8px;
   border-radius: 32px;
   border: 1px solid var(--gray-100, #ececec);
+  font-family: inherit;
 }
 .open-right__top-buttons .button svg {
   fill: #000;
@@ -433,8 +429,14 @@ body {
 .open-left__content .key-metrics__img {
   margin: 32px auto;
 }
+.open-left__content .key-metrics__img img {
+  border-radius: 12px;
+}
 .open-left__content .key-dex__img {
   margin: 32px auto;
+}
+.open-left__content .key-dex__img img {
+  border-radius: 12px;
 }
 .open-left__content .key-dex__text {
   margin: 24px auto;
@@ -614,6 +616,7 @@ em {
   background: var(--green-main, #00b881);
   padding: 16px 30px;
   font-size: 1rem;
+  font-family: inherit;
 }
 @media (max-width: 500px) {
   .open-upgrade__link {
@@ -711,7 +714,7 @@ em {
   font-weight: 800;
   font-size: 0.8rem;
   height: 22px;
-  padding: 3px 4px 1px;
+  padding: 5px 4px 1px;
   line-height: 106.25%;
   border-radius: 48px;
   background-color: #fff;
@@ -851,6 +854,7 @@ em {
   color: rgb(0, 145, 234);
   border: 1px solid var(--gray-100, #ececec);
   border-radius: 32px;
+  font-family: inherit;
 }
 .open-right__content-button-title {
   margin: 0px;
