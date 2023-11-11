@@ -476,7 +476,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	let tagContentOpen = document.querySelector('.mob-filter__list-tag')
 	let tagContentOverlay = document.querySelector('.mob-filter__list-tag-inner')
 	let tagContentClose = document.querySelector('.top-list__tag-button')
-	let filterContent = document.querySelector('.mob-filter__filter')
+	let filterContent = document.querySelector('.mob-filter__filter-button')
+	let filterContentHidden = document.querySelector('.mob-filter__filter-hidden')
+	let filterContentFilter = document.querySelector('.mob-filter__filter')
 
 	mobSearchButton.addEventListener('click', () => {
 		mobSearchContent.classList.add('d-block')
@@ -487,7 +489,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	mobCloseSearchButton.addEventListener('click', () => {
 		mobSearchContent.classList.remove('d-block')
 		tagContent.classList.remove('hidden')
-		filterContent.style.display = 'block'
+		filterContent.style.display = 'flex'
 	})
 
 	tagContent.addEventListener('click', () => {
@@ -498,5 +500,11 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 	tagContentClose.addEventListener('click', () => {
 		tagContentOpen.classList.remove('d-block')
+	})
+	filterContent.addEventListener('click', () => {
+		filterContentHidden.classList.toggle('d-block')
+		tagContent.classList.toggle('d-block')
+		filterContentFilter.classList.toggle('d-block')
+		mobSearchContent.classList.toggle('hidden')
 	})
 })
