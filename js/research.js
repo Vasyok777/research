@@ -38,10 +38,25 @@ function toggleResearch() {
 				tagElement.classList.remove('active')
 			}
 		})
+
+		// Отримуємо назву активного табу
+		const activeTagElement = document.querySelector('.box-item.active')
+		const activeTagName = activeTagElement
+			? activeTagElement.textContent
+			: 'All Tags'
+
+		// Встановлюємо назву активного табу в .mob-filter__tag-inner-text
+		mobElement.textContent = activeTagName
 	}
 
 	// Визиваємо функцію для встановлення активного табу при завантаженні сторінки
 	setActiveTab()
+
+	// Якщо немає жодного активного табу (наприклад, при першому завантаженні), активуємо перший таб
+	const activeTabs = document.querySelectorAll('.box-item.active')
+	if (activeTabs.length === 0) {
+		tagElements[0].classList.add('active')
+	}
 
 	// Додаємо обробник подій для кожного тегу
 	tagElements.forEach(tagElement => {
@@ -58,7 +73,7 @@ function toggleResearch() {
 			// Отримуємо значення тегу з атрибуту "data-tag"
 			const tag = tagElement.getAttribute('data-tag')
 
-			// Отримуємо поточний URLя
+			// Отримуємо поточний URL
 			const currentUrl = window.location.href
 
 			// Розділяємо URL на частини до `?` і після `?`
@@ -92,16 +107,20 @@ function toggleResearch() {
 		})
 	})
 }
+
+// Викликаємо функцію
 toggleResearch()
 
 document.addEventListener('DOMContentLoaded', function () {
 	// Отримайте посилання на елементи
 	let selectAllCheckbox = document.getElementById('select-all-checkbox')
 	let selectAllText = document.getElementById('select-all-text')
+	let buttonReset = document.getElementById('resetFiltersButton')
 	let assetCheckboxes = document.querySelectorAll(
 		".assets-filter__list input[type='checkbox']"
 	)
 	let textElement = document.querySelector('.text')
+	let textElementMob = document.querySelector('.text-mob')
 	let filterInput = document.getElementById('search_filter_assets')
 	let assetItems = document.querySelectorAll('.assets-filter__item')
 	let resultNotFoundText = document.querySelector('.result__filter-text')
@@ -113,6 +132,27 @@ document.addEventListener('DOMContentLoaded', function () {
 		'.author-filter__content'
 	)
 	let anotherArrowAssets = document.querySelector('.arrow-author')
+
+	buttonReset.addEventListener('click', () => {
+		// Uncheck all checkboxes
+		assetCheckboxes.forEach(checkbox => {
+			checkbox.checked = false
+		})
+
+		// Reset the text content for Select All
+		selectAllText.textContent = 'Select All'
+
+		// Clear the search filter input
+		filterInput.value = ''
+
+		// Show all asset items
+		assetItems.forEach((item, index) => {
+			item.style.display = initialAssetStates[index]
+		})
+
+		// Update text after resetting
+		updateText()
+	})
 
 	buttonOpenAssets.addEventListener('click', e => {
 		e.stopPropagation()
@@ -218,6 +258,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		if (selectedCount === 0) {
 			textElement.textContent = 'Any'
+			textElementMob.textContent = 'All Assets'
 		} else if (selectedCount === 1) {
 			// Знайдіть вибраний пункт і встановіть текст на його назву
 			let selectedAssets = Array.from(assetItems).find(function (item) {
@@ -228,11 +269,16 @@ document.addEventListener('DOMContentLoaded', function () {
 				textElement.textContent = selectedAssets.querySelector(
 					'.assets-filter__center p'
 				).textContent
+				textElementMob.textContent = selectedAssets.querySelector(
+					'.assets-filter__center p'
+				).textContent
 			} else {
 				textElement.textContent = 'Any'
+				textElementMob.textContent = 'All Assets'
 			}
 		} else {
 			textElement.textContent = selectedCount + ' Assets'
+			textElementMob.textContent = selectedCount + ' Assets'
 		}
 
 		// Перевірте, чи жоден елемент не відображається
@@ -311,13 +357,35 @@ document.addEventListener('DOMContentLoaded', function () {
 		".author-filter__content-list input[type='checkbox']"
 	)
 	let textElement = document.querySelector('.author__text')
+	let textElementMob = document.querySelector('.author__text-mob')
 	let filterInput = document.getElementById('search_filter_author')
 	let assetItems = document.querySelectorAll('.author-filter__item')
 	let resultNotFoundText = document.querySelector('.result__filter-text')
 	let buttonOpenAssets = document.getElementById('select-all-checkbox-author')
 	let assetsContentBox = document.querySelector('.author-filter__content-list')
 	let arrowAssets = document.querySelector('.arrow-author')
+	let buttonReset = document.getElementById('resetFiltersButton')
 
+	buttonReset.addEventListener('click', () => {
+		// Uncheck all checkboxes
+		assetCheckboxes.forEach(checkbox => {
+			checkbox.checked = false
+		})
+
+		// Reset the text content for Select All
+		selectAllText.textContent = 'Select All'
+
+		// Clear the search filter input
+		filterInput.value = ''
+
+		// Show all asset items
+		assetItems.forEach((item, index) => {
+			item.style.display = initialAssetStates[index]
+		})
+
+		// Update text after resetting
+		updateText()
+	})
 	buttonOpenAssets.addEventListener('click', e => {
 		e.stopPropagation()
 		assetsContentBox.classList.toggle('d-block')
@@ -416,6 +484,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		if (selectedCount === 0) {
 			textElement.textContent = 'Any'
+			textElementMob.textContent = 'All Authors'
 		} else if (selectedCount === 1) {
 			// Знайдіть вибраний пункт і встановіть текст на його назву
 			let selectedAssets = Array.from(assetItems).find(function (item) {
@@ -426,11 +495,16 @@ document.addEventListener('DOMContentLoaded', function () {
 				textElement.textContent = selectedAssets.querySelector(
 					'.author-filter__center'
 				).textContent
+				textElementMob.textContent = selectedAssets.querySelector(
+					'.author-filter__center'
+				).textContent
 			} else {
 				textElement.textContent = 'Any'
+				textElementMob.textContent = 'All Authors'
 			}
 		} else {
 			textElement.textContent = selectedCount + ' Authors'
+			textElementMob.textContent = selectedCount + ' Authors'
 		}
 
 		// Перевірте, чи жоден елемент не відображається
@@ -499,12 +573,12 @@ document.addEventListener('DOMContentLoaded', function () {
 		'.mob-filter__assets-overlay'
 	)
 
-	filterContentFilterClose.addEventListener('click', () => {
-		filterContentHidden.classList.remove('d-block')
-		tagContent.classList.remove('d-block')
-		filterContentFilter.classList.remove('d-block')
-		mobSearchContent.classList.remove('hidden')
-	})
+	// filterContentFilterClose.addEventListener('click', () => {
+	// 	filterContentHidden.classList.remove('d-block')
+	// 	tagContent.classList.remove('d-block')
+	// 	filterContentFilter.classList.remove('d-block')
+	// 	mobSearchContent.classList.remove('hidden')
+	// })
 	filterContentFilterOne.addEventListener('click', () => {
 		mobFilterAssets.classList.add('d-block')
 		document.body.classList.add('lock')

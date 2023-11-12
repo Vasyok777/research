@@ -415,7 +415,7 @@
 							</div>
 						</div>
 						<div class="research-main__filter-bottom box">
-							<div class="box-item" data-tag="All-Tags">
+							<div class="box-item active" data-tag="All-Tags">
 								<span>All Tags</span>
 							</div>
 							<div class="box-item" data-tag="DAOs">
@@ -482,20 +482,20 @@
 								</button>
 								<div class="mob-filter__filter-hidden">
 									<div class="mob-filter__filter-hidden-one">
-										<span>All Assets</span>
+										<span class='text-mob'>All Assets</span>
 										<svg class="" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
 											data-testid="ArrowDropDownOutlinedIcon">
 											<path d="m7 10 5 5 5-5H7z"></path>
 										</svg>
 									</div>
 									<div class="mob-filter__filter-hidden-two">
-										<span>All Authors</span>
+										<span class='author__text-mob'>All Authors</span>
 										<svg class="" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
 											data-testid="ArrowDropDownOutlinedIcon">
 											<path d="m7 10 5 5 5-5H7z"></path>
 										</svg>
 									</div>
-									<button class="mob-filter__filter-hidden-button">
+									<button class="mob-filter__filter-hidden-button" id='resetFiltersButton'>
 										Reset filters
 									</button>
 								</div>
@@ -1448,60 +1448,60 @@
 			</div>
 			<ul class="list-tag__ul">
 				<li class='list-tag__ul-li'>
+					<span data-tag="All-Tags" class='box-item active'>All Tags</span>
 					<svg class="list-tag__ul-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
 						data-testid="CheckIcon">
 						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
 					</svg>
-					<span data-tag="All-Tags" class='box-item'>All Tags</span>
 				</li>
 				<li class='list-tag__ul-li'>
-					<svg class="list-tag__ul-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
-						data-testid="CheckIcon">
-						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
-					</svg>
 					<span data-tag="DAOs" class='box-item'>DAOs</span>
-				</li>
-				<li class='list-tag__ul-li'>
 					<svg class="list-tag__ul-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
 						data-testid="CheckIcon">
 						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
 					</svg>
+				</li>
+				<li class='list-tag__ul-li'>
 					<span data-tag="DeFi" class='box-item'>DeFi</span>
-				</li>
-				<li class='list-tag__ul-li'>
 					<svg class="list-tag__ul-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
 						data-testid="CheckIcon">
 						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
 					</svg>
+				</li>
+				<li class='list-tag__ul-li'>
 					<span data-tag="Layer-1" class='box-item'>Layer-1</span>
-				</li>
-				<li class='list-tag__ul-li'>
 					<svg class="list-tag__ul-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
 						data-testid="CheckIcon">
 						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
 					</svg>
+				</li>
+				<li class='list-tag__ul-li'>
 					<span data-tag="Layer-2" class='box-item'>Layer-2</span>
-				</li>
-				<li class='list-tag__ul-li'>
 					<svg class="list-tag__ul-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
 						data-testid="CheckIcon">
 						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
 					</svg>
+				</li>
+				<li class='list-tag__ul-li'>
 					<span data-tag="Web3" class='box-item'>Web3</span>
-				</li>
-				<li class='list-tag__ul-li'>
 					<svg class="list-tag__ul-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
 						data-testid="CheckIcon">
 						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
 					</svg>
+				</li>
+				<li class='list-tag__ul-li'>
 					<span data-tag="NFTs" class='box-item'>NFTs</span>
-				</li>
-				<li class='list-tag__ul-li'>
 					<svg class="list-tag__ul-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
 						data-testid="CheckIcon">
 						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
 					</svg>
+				</li>
+				<li class='list-tag__ul-li'>
 					<span data-tag="Macro" class='box-item'>Macro</span>
+					<svg class="list-tag__ul-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+						data-testid="CheckIcon">
+						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+					</svg>
 				</li>
 			</ul>
 		</div>
@@ -1520,7 +1520,7 @@
 					</svg>
 				</button>
 			</div>
-			<ul class="mob-author__list">
+			<ul class="mob-author__list author-filter__content-list">
 				<li class="author-filter__item mob">
 					<label class='author-filter__label' for="author__checkbox21">
 						<input type="checkbox" id='author__checkbox21' class='assets-filter__input'>
