@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		anotherArrowAssets.classList.remove('rotate')
 		assetsContentBox.classList.toggle('d-block')
 		arrowAssets.classList.toggle('rotate')
-		document.body.classList.toggle('lock')
+		// document.body.classList.toggle('lock')
 	})
 	document.addEventListener('click', function (e) {
 		// Перевірте, чи клік був здійснений поза `assetsContentBox`
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			// Видаліть клас 'd-block' з `assetsContentBox`
 			assetsContentBox.classList.remove('d-block')
 			arrowAssets.classList.remove('rotate')
-			document.body.classList.remove('lock')
+			// document.body.classList.remove('lock')
 		}
 	})
 	// Збережіть початковий стан елементів
@@ -271,15 +271,15 @@ document.addEventListener('DOMContentLoaded', function () {
 		assetsContentBox.classList.toggle('d-block')
 		arrowAssets.classList.toggle('rotate')
 		anohterArrowAssets.classList.remove('rotate')
-		bodySite.classList.toggle('lock')
+		// bodySite.classList.toggle('lock')
 	})
 	document.addEventListener('click', function (e) {
 		if (assetsContentBox && !assetsContentBox.contains(e.target)) {
 			assetsContentBox.classList.remove('d-block')
 			arrowAssets.classList.remove('rotate')
-			document.body.classList.remove('lock')
+			// document.body.classList.remove('lock')
 		} else if (!bodySite.classList.contains('lock')) {
-			bodySite.classList.add('lock')
+			// bodySite.classList.add('lock')
 		}
 	})
 	selectAllCheckbox.addEventListener('click', () => {
@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		e.stopPropagation()
 		assetsContentBox.classList.toggle('d-block')
 		arrowAssets.classList.toggle('rotate')
-		document.body.classList.toggle('lock')
+		// document.body.classList.toggle('lock')
 	})
 
 	document.addEventListener('click', function (e) {
@@ -331,7 +331,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			// Видаліть клас 'd-block' з `assetsContentBox`
 			assetsContentBox.classList.remove('d-block')
 			arrowAssets.classList.remove('rotate')
-			document.body.classList.remove('lock')
+			// document.body.classList.remove('lock')
 		}
 	})
 
@@ -479,7 +479,56 @@ document.addEventListener('DOMContentLoaded', function () {
 	let filterContent = document.querySelector('.mob-filter__filter-button')
 	let filterContentHidden = document.querySelector('.mob-filter__filter-hidden')
 	let filterContentFilter = document.querySelector('.mob-filter__filter')
+	let filterContentFilterClose = document.querySelector(
+		'.mob-filter__filter-hidden-button'
+	)
+	let filterContentFilterTwo = document.querySelector(
+		'.mob-filter__filter-hidden-two'
+	)
+	let filterContentFilterOne = document.querySelector(
+		'.mob-filter__filter-hidden-one'
+	)
+	let mobFilterAuthor = document.querySelector('.mob-filter__author')
+	let mobFilterAssets = document.querySelector('.mob-filter__assets')
+	let mobFilterAuthorClose = document.querySelector('.mob-author__top-close')
+	let mobFilterAssetsClose = document.querySelector('.mob-assets__top-close')
+	let mobFilterAuthorOverlay = document.querySelector(
+		'.mob-filter__author-overlay'
+	)
+	let mobFilterAssetsOverlay = document.querySelector(
+		'.mob-filter__assets-overlay'
+	)
 
+	filterContentFilterClose.addEventListener('click', () => {
+		filterContentHidden.classList.remove('d-block')
+		tagContent.classList.remove('d-block')
+		filterContentFilter.classList.remove('d-block')
+		mobSearchContent.classList.remove('hidden')
+	})
+	filterContentFilterOne.addEventListener('click', () => {
+		mobFilterAssets.classList.add('d-block')
+		document.body.classList.add('lock')
+	})
+	mobFilterAssetsOverlay.addEventListener('click', () => {
+		mobFilterAssets.classList.remove('d-block')
+		document.body.classList.remove('lock')
+	})
+	mobFilterAssetsClose.addEventListener('click', () => {
+		mobFilterAssets.classList.remove('d-block')
+		document.body.classList.remove('lock')
+	})
+	filterContentFilterTwo.addEventListener('click', () => {
+		mobFilterAuthor.classList.add('d-block')
+		document.body.classList.add('lock')
+	})
+	mobFilterAuthorOverlay.addEventListener('click', () => {
+		mobFilterAuthor.classList.remove('d-block')
+		document.body.classList.remove('lock')
+	})
+	mobFilterAuthorClose.addEventListener('click', () => {
+		mobFilterAuthor.classList.remove('d-block')
+		document.body.classList.remove('lock')
+	})
 	mobSearchButton.addEventListener('click', () => {
 		mobSearchContent.classList.add('d-block')
 		tagContent.classList.add('hidden')
@@ -494,12 +543,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	tagContent.addEventListener('click', () => {
 		tagContentOpen.classList.add('d-block')
+		document.body.classList.add('lock')
 	})
 	tagContentOverlay.addEventListener('click', () => {
 		tagContentOpen.classList.remove('d-block')
+		document.body.classList.remove('lock')
 	})
 	tagContentClose.addEventListener('click', () => {
 		tagContentOpen.classList.remove('d-block')
+		document.body.classList.remove('lock')
 	})
 	filterContent.addEventListener('click', () => {
 		filterContentHidden.classList.toggle('d-block')
