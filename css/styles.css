@@ -1574,7 +1574,7 @@ body.lock {
   transition: width 200ms ease 0s;
   height: 32px;
   width: auto;
-  overflow-x: initial;
+  overflow-x: auto;
   margin-left: 8px;
 }
 .research-main__filter.mob .mob-filter__filter.d-block {
