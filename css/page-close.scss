@@ -77,10 +77,10 @@ body {
 		height: 100vh;
 		width: 100%;
 		background: linear-gradient(
-			13deg,
-			#fff 17.61%,
-			#82c6c0 56.54%,
-			#96bbf2 91.61%
+			0deg,
+			#fff 8.73%,
+			#82c6c0 56.71%,
+			#96bbf2 99.95%
 		);
 		z-index: -1;
 	}
@@ -100,7 +100,7 @@ body {
 	font-weight: 500;
 	font-size: 0.8125rem;
 	line-height: 1.75;
-	@media (max-width: 1200px){
+	@media (max-width: 1200px) {
 		padding: 0 1rem;
 	}
 	&__svg {
@@ -221,6 +221,7 @@ body {
 					&__ava {
 						width: 32px;
 						height: 32px;
+						display: none;
 						& img {
 							border-radius: 50%;
 						}
@@ -230,6 +231,13 @@ body {
 						font-size: 1rem;
 						font-weight: 600;
 						line-height: 1.4;
+						color: var(--black, #000);
+						text-align: right;
+						font-size: 14px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 24px; /* 171.429% */
+						letter-spacing: 0.28px;
 					}
 				}
 				& .bottom-right {
@@ -544,6 +552,11 @@ body {
 				font-size: 12.8px;
 				font-weight: 400;
 				color: rgb(108, 114, 128);
+				color: var(--root-faint-on-light, #8a93a6);
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 24px;
 				@media (max-width: 1200px) {
 					display: none;
 				}

@@ -81,7 +81,7 @@ body {
   bottom: 0;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(13deg, #fff 17.61%, #82c6c0 56.54%, #96bbf2 91.61%);
+  background: linear-gradient(0deg, #fff 8.73%, #82c6c0 56.71%, #96bbf2 99.95%);
   z-index: -1;
 }
 
@@ -231,6 +231,7 @@ body {
 .open-left__top-bottom .bottom-left__ava {
   width: 32px;
   height: 32px;
+  display: none;
 }
 .open-left__top-bottom .bottom-left__ava img {
   border-radius: 50%;
@@ -240,6 +241,13 @@ body {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.4;
+  color: var(--black, #000);
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.28px;
 }
 .open-left__top-bottom .bottom-right {
   color: #fbfbfc;
@@ -292,6 +300,11 @@ body {
   font-size: 12.8px;
   font-weight: 400;
   color: rgb(108, 114, 128);
+  color: var(--root-faint-on-light, #8a93a6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
 }
 @media (max-width: 1200px) {
   .open-right__top-subtitle {
@@ -380,6 +393,7 @@ body {
   border-radius: 32px;
   border: 1px solid var(--gray-100, #ececec);
   font-family: inherit;
+  padding: 8px 24px 5px;
 }
 .open-right__top-buttons .button svg {
   fill: #000;
@@ -419,7 +433,7 @@ body {
 }
 .open-left__content .key-insights__item {
   list-style: disc;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.5;
 }
 .open-left__content .key-insights__subtitle {
@@ -430,6 +444,7 @@ body {
   padding-bottom: 27px;
   margin: 24px 0;
   font-style: italic;
+  font-size: 14px;
 }
 .open-left__content .key-metrics__img {
   margin: 32px auto;
@@ -445,6 +460,7 @@ body {
 }
 .open-left__content .key-dex__text {
   margin: 24px auto;
+  font-size: 14px;
 }
 .open-left__content .key-notable__subtitle {
   font-size: 1.2rem;
@@ -461,6 +477,7 @@ body {
 }
 .open-left__content .key-notable__item {
   list-style: disc;
+  font-size: 14px;
 }
 .open-left__content .key-notable__item a {
   color: rgb(0, 184, 129);
@@ -471,6 +488,7 @@ body {
 }
 .open-left__content .key-osmo__text {
   margin: 24px 0;
+  font-size: 14px;
 }
 .open-left__content .key-osmo__text a {
   color: rgb(0, 184, 129);
@@ -482,6 +500,7 @@ body {
 }
 .open-left__content .key-summary__text {
   margin: 24px 0;
+  font-size: 14px;
 }
 .open-left__content .key-summary__text a {
   color: rgb(0, 184, 129);
@@ -860,6 +879,7 @@ em {
   border: 1px solid var(--gray-100, #ececec);
   border-radius: 32px;
   font-family: inherit;
+  padding: 8px 24px 5px;
 }
 .open-right__content-button-title {
   margin: 0px;
