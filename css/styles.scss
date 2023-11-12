@@ -1623,6 +1623,7 @@ body.lock {
 					text-wrap: nowrap;
 					border-radius: 32px;
 					font-weight: 700;
+					align-items: center;
 				}
 				&-two {
 					cursor: pointer;
@@ -1638,6 +1639,7 @@ body.lock {
 					text-wrap: nowrap;
 					border-radius: 32px;
 					font-weight: 700;
+					align-items: center;
 				}
 				&-button {
 					justify-content: center;
@@ -1779,7 +1781,6 @@ body.lock {
 			display: flex;
 			flex-direction: column;
 			gap: 10px;
-			max-height: 310px;
 			overflow: auto;
 			list-style: none;
 			position: relative;
@@ -2107,6 +2108,34 @@ body.lock {
 					color: rgb(146, 153, 170);
 				}
 			}
+		}
+	}
+}
+.mob-filter__filter-hidden-two {
+	& svg {
+		width: 20px;
+		height: 20px;
+		margin-left: 10px;
+	}
+}
+.mob-filter__filter-hidden-one {
+	& svg {
+		width: 20px;
+		height: 20px;
+		margin-left: 10px;
+	}
+}
+.mob-filter__list-tag-content .list-tag__ul-li {
+	display: flex;
+	& .box-item.active {
+		& + svg {
+			opacity: 1;
+		}
+	}
+	& .box-item {
+		& + svg {
+			order: -1;
+			opacity: 0;
 		}
 	}
 }
