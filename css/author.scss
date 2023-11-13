@@ -38,6 +38,9 @@ body {
 			#96bbf2 99.95%
 		);
 		z-index: -1;
+		@media (max-width: 768px) {
+			height: 125vh;
+		}
 	}
 }
 .author-pro__banner-link-mob {
@@ -369,6 +372,10 @@ body {
 				max-width: 45%;
 				width: 100%;
 				flex-shrink: 0;
+			}
+			@media (max-width: 500px) {
+				height: 140px;
+				max-width: 50%;
 			}
 			& img {
 				border-radius: 8px;
