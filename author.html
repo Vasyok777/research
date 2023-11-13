@@ -4,23 +4,23 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/author.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/author.css">
 	<title>Author Page</title>
 </head>
 
 <body>
-	<div class="author-navigate">
-		<a href="#" class='author-navigate__link'>
-			<svg class="author-navigate__svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
-				data-testid="ArrowBackIosIcon">
-				<path d="M11.67 3.87 9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"></path>
-			</svg>
-			Back to Research Reports
-		</a>
-	</div>
-	<main>
-
+	<main class="author-main">
+		<div class="author-main__bg"></div>
+		<div class="author-navigate">
+			<a href="#" class='author-navigate__link'>
+				<svg class="author-navigate__svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+					data-testid="ArrowBackIosIcon">
+					<path d="M11.67 3.87 9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"></path>
+				</svg>
+				Back to Research Reports
+			</a>
+		</div>
 		<div class="author-info">
 			<div class="container">
 				<div class="author-info__content">
@@ -29,7 +29,7 @@
 					</div>
 					<div class="author-info__info">
 						<div class="author-info__top">
-							<div class="author-info__top-left">
+							<div class="author-info__top-left one">
 								<h1 class="author-info__top-title">Toe Bautista</h1>
 								<p class="author-info__time">10 REPORTS SINCE 11.08.2023</p>
 							</div>
@@ -123,16 +123,19 @@
 								Pro
 							</div>
 						</a>
-						<h4 class="author-content__item-title">Market Data Flows</h4>
-						<div class="author-content__item-bottom item-box">
-							<div class="item-box">
-								<div class="item-box__left">
-									<img src="./images/author/auth.avif" alt="">
-								</div>
-								<div class="item-box__right">
-									<h4 class="author-content__item-mob-title">Market Data Flows</h4>
-									<h6 class="item-box__title">Toe Bautista</h6>
-									<p class="item-box__text">a day ago • 6 min read</p>
+
+						<div class="author-content__item-title-wrpper">
+							<h4 class="author-content__item-title">Market Data Flows</h4>
+							<div class="author-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/author/auth.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h4 class="author-content__item-mob-title">Market Data Flows</h4>
+										<a href='/author' class="item-box__title">Toe Bautista</a>
+										<p class="item-box__text">a day ago • 6 min read</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -150,16 +153,20 @@
 								Enterprise
 							</div>
 						</a>
-						<h4 class="author-content__item-title">DeFi Valuation Trends</h4>
-						<div class="author-content__item-bottom item-box">
-							<div class="item-box">
-								<div class="item-box__left">
-									<img src="./images/author/auth.avif" alt="">
-								</div>
-								<div class="item-box__right">
-									<h4 class="author-content__item-mob-title">DeFi Valuation Trends</h4>
-									<h6 class="item-box__title">Toe Bautista</h6>
-									<p class="item-box__text">Oct 20, 2023 • 12 min read</p>
+
+						<div class="author-content__item-title-wrpper">
+
+							<h4 class="author-content__item-title">DeFi Valuation Trends</h4>
+							<div class="author-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/author/auth.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h4 class="author-content__item-mob-title">DeFi Valuation Trends</h4>
+										<h6 class="item-box__title">Toe Bautista</h6>
+										<p class="item-box__text">Oct 20, 2023 • 12 min read</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -177,16 +184,19 @@
 								Pro
 							</div>
 						</a>
-						<h4 class="author-content__item-title">Isolated Lending Markets</h4>
-						<div class="author-content__item-bottom item-box">
-							<div class="item-box">
-								<div class="item-box__left">
-									<img src="./images/author/auth.avif" alt="">
-								</div>
-								<div class="item-box__right">
-									<h4 class="author-content__item-mob-title">Isolated Lending Markets</h4>
-									<h6 class="item-box__title">Toe Bautista</h6>
-									<p class="item-box__text">Oct 13, 2023 • 6 min read</p>
+						<div class="author-content__item-title-wrpper">
+
+							<h4 class="author-content__item-title">Isolated Lending Markets</h4>
+							<div class="author-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/author/auth.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h4 class="author-content__item-mob-title">Isolated Lending Markets</h4>
+										<h6 class="item-box__title">Toe Bautista</h6>
+										<p class="item-box__text">Oct 13, 2023 • 6 min read</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -204,26 +214,26 @@
 								Pro
 							</div>
 						</a>
-						<h4 class="author-content__item-title">Liquid Staking Brief</h4>
-						<div class="author-content__item-bottom item-box">
-							<div class="item-box">
-								<div class="item-box__left">
-									<img src="./images/author/auth.avif" alt="">
-								</div>
-								<div class="item-box__right">
-									<h4 class="author-content__item-mob-title">Liquid Staking Brief</h4>
-									<h6 class="item-box__title">Toe Bautista</h6>
-									<p class="item-box__text">Oct 10, 2023 • 13 min read</p>
+						<div class="author-content__item-title-wrpper">
+
+							<h4 class="author-content__item-title">Liquid Staking Brief</h4>
+							<div class="author-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/author/auth.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h4 class="author-content__item-mob-title">Liquid Staking Brief</h4>
+										<h6 class="item-box__title">Toe Bautista</h6>
+										<p class="item-box__text">Oct 10, 2023 • 13 min read</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End content top -->
-		<!-- Pro research -->
-		<div class="author-pro__banner">
+					<!-- End content top -->
+					<!-- Pro research -->
+					<!-- <div class="author-pro__banner">
 			<div class="container">
 				<div class="author-pro__banner-content">
 					<div class="author-pro__banner-left">
@@ -242,12 +252,9 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- End Pro research -->
-		<!-- Card 2 -->
-		<div class="author-content">
-			<div class="container">
-				<div class="author-content__wrapper">
+		</div> -->
+					<!-- End Pro research -->
+					<!-- Card 2 -->
 					<div class="author-content__item">
 						<a href='' class="author-content__item-img">
 							<img src="./images/author/card/5.webp" alt="">
@@ -261,17 +268,22 @@
 								Pro
 							</div>
 						</a>
-						<h4 class="author-content__item-title">Layer-1 and Layer-2 Valuations: Where are they now?</h4>
-						<div class="author-content__item-bottom item-box">
-							<div class="item-box">
-								<div class="item-box__left">
-									<img src="./images/author/auth.avif" alt="">
-								</div>
-								<div class="item-box__right">
-									<h4 class="author-content__item-mob-title">Layer-1 and Layer-2 Valuations: Where are
-										they now?</h4>
-									<h6 class="item-box__title">Toe Bautista</h6>
-									<p class="item-box__text">a day ago • 6 min read</p>
+						<div class="author-content__item-title-wrpper">
+
+							<h4 class="author-content__item-title">Layer-1 and Layer-2 Valuations: Where are they now?
+							</h4>
+							<div class="author-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/author/auth.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h4 class="author-content__item-mob-title">Layer-1 and Layer-2 Valuations: Where
+											are
+											they now?</h4>
+										<a href='/author' class="item-box__title">Toe Bautista</a>
+										<p class="item-box__text">a day ago • 6 min read</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -289,19 +301,22 @@
 								Pro
 							</div>
 						</a>
-						<h4 class="author-content__item-title">Grayscale and X Spark Optimism
-							Across Crypto Markets</h4>
-						<div class="author-content__item-bottom item-box">
-							<div class="item-box">
-								<div class="item-box__left">
-									<img src="./images/author/three-ava.avif" alt="">
-									<img src="./images/author/auth.avif" alt="">
-								</div>
-								<div class="item-box__right">
-									<h4 class="author-content__item-mob-title">Grayscale and X Spark Optimism
-										Across Crypto Markets</h4>
-									<h6 class="item-box__title">Toe Bautista</h6>
-									<p class="item-box__text">Chase Devens, Toe Bautista</p>
+						<div class="author-content__item-title-wrpper">
+
+							<h4 class="author-content__item-title">Grayscale and X Spark Optimism
+								Across Crypto Markets</h4>
+							<div class="author-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/author/three-ava.avif" alt="">
+										<img src="./images/author/auth.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h4 class="author-content__item-mob-title">Grayscale and X Spark Optimism
+											Across Crypto Markets</h4>
+										<h6 class="item-box__title">Toe Bautista</h6>
+										<p class="item-box__text">Chase Devens, Toe Bautista</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -319,18 +334,22 @@
 								Enterprise
 							</div>
 						</a>
-						<h4 class="author-content__item-title">Base: Establishing a Legitimate Layer-2 Presence</h4>
-						<div class="author-content__item-bottom item-box">
-							<div class="item-box">
-								<div class="item-box__left">
-									<img src="./images/author/three-ava.avif" alt="">
-									<img src="./images/author/auth.avif" alt="">
-								</div>
-								<div class="item-box__right">
-									<h4 class="author-content__item-mob-title">Base: Establishing a Legitimate Layer-2
-										Presence</h4>
-									<h6 class="item-box__title">Ally Zach, Toe Bautista</h6>
-									<p class="item-box__text">Aug 25, 2023 • 13 min read</p>
+						<div class="author-content__item-title-wrpper">
+
+							<h4 class="author-content__item-title">Base: Establishing a Legitimate Layer-2 Presence</h4>
+							<div class="author-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/author/three-ava.avif" alt="">
+										<img src="./images/author/auth.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h4 class="author-content__item-mob-title">Base: Establishing a Legitimate
+											Layer-2
+											Presence</h4>
+										<h6 class="item-box__title">Ally Zach, Toe Bautista</h6>
+										<p class="item-box__text">Aug 25, 2023 • 13 min read</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -348,17 +367,21 @@
 								Pro
 							</div>
 						</a>
-						<h4 class="author-content__item-title">friend.tech: Social Financialization Built on Base</h4>
-						<div class="author-content__item-bottom item-box">
-							<div class="item-box">
-								<div class="item-box__left">
-									<img src="./images/author/auth.avif" alt="">
-								</div>
-								<div class="item-box__right">
-									<h4 class="author-content__item-mob-title">friend.tech: Social Financialization
-										Built on Base</h4>
-									<h6 class="item-box__title">Toe Bautista</h6>
-									<p class="item-box__text">Aug 16, 2023 • 3 min read</p>
+						<div class="author-content__item-title-wrpper">
+
+							<h4 class="author-content__item-title">friend.tech: Social Financialization Built on Base
+							</h4>
+							<div class="author-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/author/auth.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h4 class="author-content__item-mob-title">friend.tech: Social Financialization
+											Built on Base</h4>
+										<h6 class="item-box__title">Toe Bautista</h6>
+										<p class="item-box__text">Aug 16, 2023 • 3 min read</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -367,90 +390,67 @@
 			</div>
 		</div>
 		<!-- End Card 2 -->
-		<!-- Banner 2 -->
-		<div class="author-pro__banner">
-			<div class="container">
-				<div class="author-pro__banner-content">
-					<div class="author-pro__banner-left">
-						<h3 class='author-pro__banner-title'>Exclusive <span>Enterprise Research</span> Insights
-						</h3>
-						<p class='author-pro__banner-subtitle'>Access enterprise-grade research reports including
-							valuation models, ecosystem maps and more.</p>
-						<a href="#" class='author-pro__banner-link-mob'>Learn More</a>
-					</div>
-					<div class="author-pro__banner-center">
-						<img src="./images/author/author-banner-one.png" alt="">
-					</div>
-					<div class="author-pro__banner-right two">
-						<a href="#">Learn More</a>
-					</div>
-				</div>
+		<!-- Banner 1 -->
+		<div class="author-pro">
+			<img class='author-pro__banner-one' src="./images/banner-one.png" alt="">
+			<img class='author-pro__banner-decor' src="./images/decor.png" alt="">
+			<div class="author-pro__left">
+				<h6 class="author-pro__left-subtitle">Upgrade to <span>Cryptonomy Pro</span>
+					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" viewBox="0 0 25 16" fill="none">
+						<path
+							d="M24.4692 1.44854C24.3876 1.24518 24.6164 0.601886 24.4692 0.448536C24.4452 0.423534 23.4932 0.470205 23.4692 0.448536C23.338 0.326856 23.6356 0.518544 23.4692 0.448536C23.2948 0.373528 22.6548 0.45687 22.4692 0.448536C22.4452 0.448536 22.4932 0.448536 22.4692 0.448536H18.4692C17.586 0.448536 16.4692 1.52844 16.4692 2.44854C16.4692 3.36864 17.586 3.44854 18.4692 3.44854H19.4692L13.4692 9.44854L10.4692 7.44854C9.22116 6.1584 7.71249 6.15173 6.46922 7.44854L0.469224 12.4485C-0.156408 13.1003 -0.156408 14.7968 0.469224 15.4485C0.781239 15.7736 2.0596 15.4485 2.46922 15.4485C2.87884 15.4485 3.15721 15.7736 3.46922 15.4485L8.46922 9.44854L11.4692 12.4485C12.7221 13.742 14.226 13.7487 15.4692 12.4485L21.4692 6.44854V7.44854C21.4692 8.36864 21.586 8.44854 22.4692 8.44854C23.3525 8.44854 24.4692 8.36864 24.4692 7.44854V2.44854C24.4692 2.23185 24.5492 1.65189 24.4692 1.44854Z"
+							fill="#FFE014" />
+					</svg>
+				</h6>
+				<h2 class="author-pro__left-title">Deeper Research and Data</h2>
+				<a href="#" class='author-pro__left-link'>Learn More</a>
 			</div>
+			<ul class="author-pro__right">
+				<li class='author-pro__right-item'>
+					<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+					</svg>
+					Screener Access: Create up to 5 Screens
+				</li>
+				<li class='author-pro__right-item'>
+					<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+					</svg>
+					Up to 10 Saved Tradingview charts
+				</li>
+				<li class='author-pro__right-item'>
+					<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+					</svg>
+					Unlimited Watchlists
+				</li>
+				<li class='author-pro__right-item'>
+					<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+					</svg>
+					Live Newsfeed with AI Summaries
+				</li>
+				<li class='author-pro__right-item'>
+					<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+					</svg>
+					Daily & Weekly AI Digests on Watchlists
+				</li>
+				<li class='author-pro__right-item'>
+					<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+					</svg>
+					Daily Governance Alerts
+				</li>
+				<li class='author-pro__right-item'>
+					<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+					</svg>
+					Daily Professional Research
+				</li>
+			</ul>
 		</div>
 		<!-- End Banner 2 -->
-		<!-- card three -->
-		<div class="author-content">
-			<div class="container">
-				<div class="author-content__wrapper">
-					<div class="author-content__item">
-						<a href='' class="author-content__item-img">
-							<img src="./images/author/card/9.webp" alt="">
-							<div class="author-content__item-status pro">
-								<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-									class="css-1ij4w9j">
-									<path
-										d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
-										fill="currentColor"></path>
-								</svg>
-								Pro
-							</div>
-						</a>
-						<h4 class="author-content__item-title">Goldfinch Default: The Double-Edged Sword of RWAs</h4>
-						<div class="author-content__item-bottom item-box">
-							<div class="item-box">
-								<div class="item-box__left">
-									<img src="./images/author/auth.avif" alt="">
-								</div>
-								<div class="item-box__right">
-									<h4 class="author-content__item-mob-title">Goldfinch Default: The Double-Edged Sword
-										of RWAs</h4>
-									<h6 class="item-box__title">Toe Bautista</h6>
-									<p class="item-box__text">Aug 11, 2023 • 2 min read</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="author-content__item">
-						<a href='' class="author-content__item-img">
-							<img src="./images/author/card/10.webp" alt="">
-							<div class="author-content__item-status pro">
-								<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-									class="css-1ij4w9j">
-									<path
-										d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
-										fill="currentColor"></path>
-								</svg>
-								Pro
-							</div>
-						</a>
-						<h4 class="author-content__item-title">USDT Redemptions and Depeg</h4>
-						<div class="author-content__item-bottom item-box">
-							<div class="item-box">
-								<div class="item-box__left">
-									<img src="./images/author/auth.avif" alt="">
-								</div>
-								<div class="item-box__right">
-									<h4 class="author-content__item-mob-title">USDT Redemptions and Depeg</h4>
-									<h6 class="item-box__title">Toe Bautista</h6>
-									<p class="item-box__text">Aug 11, 2023 • 6 min read</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- end card three -->
 	</main>
 	<script src="./js/author.js"></script>
 </body>
