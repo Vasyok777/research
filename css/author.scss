@@ -214,8 +214,17 @@ body {
 		display: flex;
 		justify-content: space-between;
 		gap: 10px;
+		&.mob {
+			display: none;
+			@media (max-width: 768px) {
+				display: flex;
+			}
+		}
 		@media (max-width: 1200px) {
 			flex-direction: column;
+		}
+		@media (max-width: 768px) {
+			display: none;
 		}
 		&-buttons {
 			display: flex;
