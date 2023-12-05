@@ -704,7 +704,7 @@ body {
     padding: 20px 16px;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 400px) {
   .markets-coins {
     padding: 16px 5px;
   }
