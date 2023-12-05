@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1828,4 +1829,1837 @@
 		<script src="js/research.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Research Page</title>
+</head>
+
+<body>
+	<!-- <div class="research-navigate">
+		<a href="/research" class='research-navigate__link active'>
+			Research Reports
+		</a>
+		<a href="/research/protocol-reporting.html" class='research-navigate__link'>
+			Protocol Reporting
+		</a>
+		<a href="/research/research-and-protocols.html" class='research-navigate__link'>
+			All Research
+		</a>
+	</div> -->
+	<main class="research-main">
+		<div class="research-main__decor"></div>
+		<div class="research-main__top">
+			<div class="research-main__top-container">
+				<div class="research-main__top-wrapper">
+					<div class="research-main__filter">
+						<div class="research-main__filter-top">
+							<div class="research-main__filter-top-right">
+								<div class='top-input__img'>
+									<svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1cw4hi4"
+										focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+										data-testid="SearchIcon">
+										<path
+											d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+										</path>
+									</svg>
+								</div>
+								<div class="top-input__search">
+									<input type="text" placeholder='Search research by keyword, tag or author'>
+								</div>
+							</div>
+							<div class="filter-top">
+								<button class="filter-top__button">
+									<div class="button__left" id='filter-top__button-assets'>
+										<div class="title">Asset / Watchlist</div>
+										<div class="text">Any</div>
+										<svg class="button__right arrow-assets" focusable="false" aria-hidden="true"
+											viewBox="0 0 24 24" data-testid="ArrowDropDownIcon">
+											<path d="m7 10 5 5 5-5z"></path>
+										</svg>
+									</div>
+									<div class="assets-filter__content">
+										<div class="assets-filter__content-top">
+											<input type="text" placeholder='Filter...' id='search_filter_assets'>
+										</div>
+										<div class="assets-filter__content-center">
+											<div class="center-top">
+												<div class="center-top__row">
+													<h6>Watchlists</h6>
+													<a href="#">Create new</a>
+												</div>
+												<p class="center-top__text">You have not created any watchlists.</p>
+												<div class="center-top__sublist">
+													<h6>Assets</h6>
+													<label for="select-all-checkbox">
+														<input type="checkbox" id="select-all-checkbox">
+														<span id="select-all-text">Select All</span>
+													</label>
+												</div>
+											</div>
+											<p class='result__filter-text'></p>
+											<ul class="assets-filter__list">
+												<!-- 1 -->
+												<li class="assets-filter__item">
+													<label class='assets-filter__label' for="assets__checkbox1">
+														<input type="checkbox" id='assets__checkbox1'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<div class='assets-filter__center'>
+															<p>Bitcoin
+															</p>
+															<span>BTC</span>
+														</div>
+														<div class='assets-filter__item-img'>
+															<img src="./images/coins/1.png" alt="">
+														</div>
+													</label>
+												</li>
+												<!-- 2 -->
+												<li class="assets-filter__item">
+													<label class='assets-filter__label' for="assets__checkbox2">
+														<input type="checkbox" id='assets__checkbox2'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<div class='assets-filter__center'>
+															<p>Ethereum</p>
+															<span>ETH</span>
+														</div>
+														<div class='assets-filter__item-img'>
+															<img src="./images/coins/2.png" alt="">
+														</div>
+													</label>
+												</li>
+												<!-- 3 -->
+												<li class="assets-filter__item">
+													<label class='assets-filter__label' for="assets__checkbox3">
+														<input type="checkbox" id='assets__checkbox3'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<div class='assets-filter__center'>
+															<p>Tether</p>
+															<span>USDT</span>
+														</div>
+														<div class='assets-filter__item-img'>
+															<img src="./images/coins/3.png" alt="">
+														</div>
+													</label>
+												</li>
+												<!-- 4 -->
+												<li class="assets-filter__item">
+													<label class='assets-filter__label' for="assets__checkbox4">
+														<input type="checkbox" id='assets__checkbox4'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<div class='assets-filter__center'>
+															<p>BNB</p>
+															<span>BNB</span>
+														</div>
+														<div class='assets-filter__item-img'>
+															<img src="./images/coins/4.png" alt="">
+														</div>
+													</label>
+												</li>
+												<!-- 5 -->
+												<li class="assets-filter__item">
+													<label class='assets-filter__label' for="assets__checkbox5">
+														<input type="checkbox" id='assets__checkbox5'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<div class='assets-filter__center'>
+															<p>XRP</p>
+															<span>XRP</span>
+														</div>
+														<div class='assets-filter__item-img'>
+															<img src="./images/coins/5.png" alt="">
+														</div>
+													</label>
+												</li>
+												<!-- 6 -->
+												<li class="assets-filter__item">
+													<label class='assets-filter__label' for="assets__checkbox6">
+														<input type="checkbox" id='assets__checkbox6'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<div class='assets-filter__center'>
+															<p>USDC</p>
+															<span>USDC</span>
+														</div>
+														<div class='assets-filter__item-img'>
+															<img src="./images/coins/6.png" alt="">
+														</div>
+													</label>
+												</li>
+												<!-- 7 -->
+												<li class="assets-filter__item">
+													<label class='assets-filter__label' for="assets__checkbox7">
+														<input type="checkbox" id='assets__checkbox7'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<div class='assets-filter__center'>
+															<p>Solana</p>
+															<span>SOL</span>
+														</div>
+														<div class='assets-filter__item-img'>
+															<img src="./images/coins/7.png" alt="">
+														</div>
+													</label>
+												</li>
+												<!-- 8 -->
+												<li class="assets-filter__item">
+													<label class='assets-filter__label' for="assets__checkbox8">
+														<input type="checkbox" id='assets__checkbox8'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<div class='assets-filter__center'>
+															<p>Lido Staked Ether</p>
+															<span>STETH</span>
+														</div>
+														<div class='assets-filter__item-img'>
+															<img src="./images/coins/8.png" alt="">
+														</div>
+													</label>
+												</li>
+												<!-- 9 -->
+												<li class="assets-filter__item">
+													<label class='assets-filter__label' for="assets__checkbox9">
+														<input type="checkbox" id='assets__checkbox9'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<div class='assets-filter__center'>
+															<p>Cardano</p>
+															<span>ADA</span>
+														</div>
+														<div class='assets-filter__item-img'>
+															<img src="./images/coins/9.png" alt="">
+														</div>
+													</label>
+												</li>
+												<!-- 10 -->
+												<li class="assets-filter__item">
+													<label class='assets-filter__label' for="assets__checkbox10">
+														<input type="checkbox" id='assets__checkbox10'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<div class='assets-filter__center'>
+															<p>Dogecoin</p>
+															<span>DOGE</span>
+														</div>
+														<div class='assets-filter__item-img'>
+															<img src="./images/coins/10.png" alt="">
+														</div>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</button>
+								<button class="filter-top__button">
+									<div class="button__left" id='filter-top__button-author'>
+										<div class="title">Author</div>
+										<div class="author__text" id="selected-author">Any</div>
+										<svg class="button__right arrow-author" focusable="false" aria-hidden="true"
+											viewBox="0 0 24 24" data-testid="ArrowDropDownIcon">
+											<path d="m7 10 5 5 5-5z"></path>
+										</svg>
+									</div>
+									<div class="author-filter__content" id='author-filter__content'>
+										<div class="author-filter__content-top">
+											<input type="text" placeholder='Filter...' id='search_filter_author'>
+											<label for="select-all-checkbox-author">
+												<input type="checkbox" class='' id="select-all-checkbox-author">
+												<span id="select-all-text-author">Select All</span>
+											</label>
+										</div>
+										<div class="author-filter__content-center">
+											<ul class='author-filter__content-list'>
+												<!-- 1 -->
+												<li class="author-filter__item">
+													<label class='author-filter__label' for="author__checkbox1">
+														<input type="checkbox" id='author__checkbox1'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<p class='author-filter__center'>
+															Ally Zach
+
+														</p>
+														<div class='author-filter__item-img'>
+															<img src="./images/research/author/filter/1.avif" alt="">
+														</div>
+													</label>
+												</li>
+												<!-- 2 -->
+												<li class="author-filter__item">
+													<label class='author-filter__label' for="author__checkbox2">
+														<input type="checkbox" id='author__checkbox2'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<p class='author-filter__center'>
+															AJ Scolaro
+														</p>
+														<div class='author-filter__item-img'>
+															<img src="./images/research/author/filter/2.avif" alt="">
+														</div>
+													</label>
+												</li>
+												<!-- 3 -->
+												<li class="author-filter__item">
+													<label class='author-filter__label' for="author__checkbox3">
+														<input type="checkbox" id='author__checkbox3'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<p class='author-filter__center'>
+															John_TotalValue_Locke
+														</p>
+														<div class='author-filter__item-img'>
+															<img src="./images/research/author/filter/3.avif" alt="">
+														</div>
+													</label>
+												</li>
+												<!-- 4 -->
+												<li class="author-filter__item">
+													<label class='author-filter__label' for="author__checkbox4">
+														<input type="checkbox" id='author__checkbox4'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<p class='author-filter__center'>
+															Ainsley To
+														</p>
+														<div class='author-filter__item-img'>
+															<img src="./images/research/author/filter/4.avif" alt="">
+														</div>
+													</label>
+												</li>
+												<!-- 5 -->
+												<li class="author-filter__item">
+													<label class='author-filter__label' for="author__checkbox5">
+														<input type="checkbox" id='author__checkbox5'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<p class='author-filter__center'>
+															AJ Scolaro
+														</p>
+														<div class='author-filter__item-img'>
+															<img src="./images/research/author/filter/5.avif" alt="">
+														</div>
+													</label>
+												</li>
+												<!-- 6 -->
+												<li class="author-filter__item">
+													<label class='author-filter__label' for="author__checkbox6">
+														<input type="checkbox" id='author__checkbox6'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<p class='author-filter__center'>
+															Jerry Sun
+														</p>
+														<div class='author-filter__item-img'>
+															<img src="./images/research/author/filter/6.avif" alt="">
+														</div>
+													</label>
+												</li>
+												<!-- 7 -->
+												<li class="author-filter__item">
+													<label class='author-filter__label' for="author__checkbox7">
+														<input type="checkbox" id='author__checkbox7'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<p class='author-filter__center'>
+															AJ Scolaro
+														</p>
+														<div class='author-filter__item-img'>
+															<img src="./images/research/author/filter/7.avif" alt="">
+														</div>
+													</label>
+												</li>
+												<!-- 8 -->
+												<li class="author-filter__item">
+													<label class='author-filter__label' for="author__checkbox8">
+														<input type="checkbox" id='author__checkbox8'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<p class='author-filter__center'>
+															AJ Scolaro
+														</p>
+														<div class='author-filter__item-img'>
+															<img src="./images/research/author/filter/8.avif" alt="">
+														</div>
+													</label>
+												</li>
+												<!-- 9 -->
+												<li class="author-filter__item">
+													<label class='author-filter__label' for="author__checkbox9">
+														<input type="checkbox" id='author__checkbox9'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<p class='author-filter__center'>
+															AJ Scolaro
+														</p>
+														<div class='author-filter__item-img'>
+															<img src="./images/research/author/filter/9.avif" alt="">
+														</div>
+													</label>
+												</li>
+												<!-- 10 -->
+												<li class="author-filter__item">
+													<label class='author-filter__label' for="author__checkbox10">
+														<input type="checkbox" id='author__checkbox10'
+															class='assets-filter__input'>
+														<span class='assets__checkbox'></span>
+														<p class='author-filter__center'>
+															AJ Scolaro
+														</p>
+														<div class='author-filter__item-img'>
+															<img src="./images/research/author/filter/10.avif" alt="">
+														</div>
+													</label>
+												</li>
+												<!--  -->
+											</ul>
+										</div>
+									</div>
+								</button>
+								<div class="filter-top__box">
+									<button class='filter-top__box-one active'>
+										<svg class="" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+											data-testid="GridViewIcon">
+											<path fill-rule="evenodd"
+												d="M3 3v8h8V3H3zm6 6H5V5h4v4zm-6 4v8h8v-8H3zm6 6H5v-4h4v4zm4-16v8h8V3h-8zm6 6h-4V5h4v4zm-6 4v8h8v-8h-8zm6 6h-4v-4h4v4z">
+											</path>
+										</svg>
+									</button>
+									<button class='filter-top__box-two'>
+										<svg class="" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+											data-testid="TableChartIcon">
+											<path
+												d="M10 10.02h5V21h-5zM17 21h3c1.1 0 2-.9 2-2v-9h-5v11zm3-18H5c-1.1 0-2 .9-2 2v3h19V5c0-1.1-.9-2-2-2zM3 19c0 1.1.9 2 2 2h3V10H3v9z">
+											</path>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="research-main__filter-bottom box">
+							<div class="box-item active" data-tag="All-Tags">
+								<span>All Tags</span>
+							</div>
+							<div class="box-item" data-tag="DAOs">
+								<span>DAOs</span>
+							</div>
+							<div class="box-item" data-tag="DeFi">
+								<span>DeFi</span>
+							</div>
+							<div class="box-item" data-tag="Layer-1">
+								<span>Layer-1</span>
+							</div>
+							<div class="box-item" data-tag="Layer-2">
+								<span>Layer-2</span>
+							</div>
+							<div class="box-item" data-tag="Web3">
+								<span>Web3</span>
+							</div>
+							<div class="box-item" data-tag="NFTs">
+								<span>NFTs</span>
+							</div>
+							<div class="box-item" data-tag="Macro">
+								<span>Macro</span>
+							</div>
+						</div>
+					</div>
+					<!-- hello -->
+					<div class="research-main__filter mob">
+						<div class="mob-filter">
+							<div class="mob-filter__search">
+								<div class="mob-filter__search-inner ">
+									<div class="mob-filter__search-img">
+										<svg class="" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+											data-testid="SearchIcon">
+											<path
+												d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+											</path>
+										</svg>
+									</div>
+									<div class="mob-filter__search-input">
+										<input type="text" placeholder='Search: keyword, tag, author'>
+									</div>
+								</div>
+								<button class='mob-filter__search-button' type='button'>Cancel</button>
+							</div>
+							<!-- tag -->
+							<div class="mob-filter__tag">
+								<div class="mob-filter__tag-inner">
+									<span class='mob-filter__tag-inner-text'>All tags</span>
+									<svg class="mob-filter__tag-svg" focusable="false" aria-hidden="true"
+										viewBox="0 0 24 24" data-testid="ArrowDropDownOutlinedIcon">
+										<path d="m7 10 5 5 5-5H7z"></path>
+									</svg>
+								</div>
+							</div>
+							<!-- filter -->
+							<div class="mob-filter__filter">
+								<button class="mob-filter__filter-button">
+									<svg class="mob-filter__filter-svg" focusable="false" aria-hidden="true"
+										viewBox="0 0 24 24" data-testid="FilterListRoundedIcon">
+										<path
+											d="M11 18h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1zm4 6h10c.55 0 1-.45 1-1s-.45-1-1-1H7c-.55 0-1 .45-1 1s.45 1 1 1z">
+										</path>
+									</svg>
+								</button>
+								<div class="mob-filter__filter-hidden">
+									<div class="mob-filter__filter-hidden-one">
+										<span class='text-mob'>All Assets</span>
+										<svg class="" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+											data-testid="ArrowDropDownOutlinedIcon">
+											<path d="m7 10 5 5 5-5H7z"></path>
+										</svg>
+									</div>
+									<div class="mob-filter__filter-hidden-two">
+										<span class='author__text-mob'>All Authors</span>
+										<svg class="" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+											data-testid="ArrowDropDownOutlinedIcon">
+											<path d="m7 10 5 5 5-5H7z"></path>
+										</svg>
+									</div>
+									<button class="mob-filter__filter-hidden-button" id='resetFiltersButton'>
+										Reset filters
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="research-main__column">
+			<div class="research-main__content">
+				<!-- start content -->
+				<div class="research-content">
+					<div class="container">
+						<div class="research-content__wrapper">
+							<!-- 1 -->
+							<div class="research-content__item">
+								<a href='' class="research-content__item-img">
+									<img src="./images/research/1.webp" alt="">
+									<div class="research-content__item-status pro">
+										<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+											class="css-1ij4w9j">
+											<path
+												d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+												fill="currentColor"></path>
+										</svg>
+										Pro
+									</div>
+								</a>
+								<h4 class="research-content__item-title">Spoiler Alert – Coinbase Q3 Revenue Estimates
+								</h4>
+								<div class="research-content__item-bottom item-box">
+									<div class="item-box">
+										<div class="item-box__left">
+											<img src="./images/research/author/1.avif" alt="">
+										</div>
+										<div class="item-box__right">
+											<h6 class="item-box__title">Toe Bautista</h6>
+											<p class="item-box__text">a day ago • 6 min read</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 2 -->
+							<div class="research-content__item">
+								<a href='' class="research-content__item-img">
+									<img src="./images/research/2.webp" alt="">
+									<div class="research-content__item-status pro">
+										<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+											class="css-1ij4w9j">
+											<path
+												d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+												fill="currentColor"></path>
+										</svg>
+										Pro
+									</div>
+								</a>
+								<h4 class="research-content__item-title">Grayscale and X Spark Optimism
+									Across Crypto Markets</h4>
+								<div class="research-content__item-bottom item-box">
+									<div class="item-box">
+										<div class="item-box__left">
+											<img src="./images/research/author/1.avif" alt="">
+											<img src="./images/research/author/1.avif" alt="">
+										</div>
+										<div class="item-box__right">
+											<h6 class="item-box__title">Toe Bautista</h6>
+											<p class="item-box__text">Chase Devens, Toe Bautista</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 3 -->
+							<div class="research-content__item">
+								<a href='' class="research-content__item-img">
+									<img src="./images/research/1.webp" alt="">
+									<div class="research-content__item-status enterprise">
+										<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+											class="css-1ij4w9j">
+											<path
+												d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+												fill="currentColor"></path>
+										</svg>
+										Enterprise
+									</div>
+								</a>
+								<h4 class="research-content__item-title">Base: Establishing a Legitimate Layer-2
+									Presence
+								</h4>
+								<div class="research-content__item-bottom item-box">
+									<div class="item-box">
+										<div class="item-box__left">
+											<img src="./images/research/author/1.avif" alt="">
+										</div>
+										<div class="item-box__right">
+											<h6 class="item-box__title">Ally Zach, Toe Bautista</h6>
+											<p class="item-box__text">Aug 25, 2023 • 13 min read</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 4 -->
+							<div class="research-content__item">
+								<a href='' class="research-content__item-img">
+									<img src="./images/research/2.webp" alt="">
+									<div class="research-content__item-status pro">
+										<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+											class="css-1ij4w9j">
+											<path
+												d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+												fill="currentColor"></path>
+										</svg>
+										Pro
+									</div>
+								</a>
+								<h4 class="research-content__item-title">friend.tech: Social Financialization Built on
+									Base
+								</h4>
+								<div class="research-content__item-bottom item-box">
+									<div class="item-box">
+										<div class="item-box__left">
+											<img src="./images/research/author/1.avif" alt="">
+										</div>
+										<div class="item-box__right">
+											<h6 class="item-box__title">Toe Bautista</h6>
+											<p class="item-box__text">Aug 16, 2023 • 3 min read</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 5 -->
+							<!-- 6 -->
+							<div class="research-content__item">
+								<a href='' class="research-content__item-img">
+									<img src="./images/research/1.webp" alt="">
+									<div class="research-content__item-status pro">
+										<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+											class="css-1ij4w9j">
+											<path
+												d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+												fill="currentColor"></path>
+										</svg>
+										Pro
+									</div>
+								</a>
+								<h4 class="research-content__item-title">Spoiler Alert – Coinbase Q3 Revenue Estimates
+								</h4>
+								<div class="research-content__item-bottom item-box">
+									<div class="item-box">
+										<div class="item-box__left">
+											<img src="./images/research/author/1.avif" alt="">
+										</div>
+										<div class="item-box__right">
+											<h6 class="item-box__title">Toe Bautista</h6>
+											<p class="item-box__text">a day ago • 6 min read</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 6 -->
+							<div class="research-content__item">
+								<a href='' class="research-content__item-img">
+									<img src="./images/research/2.webp" alt="">
+									<div class="research-content__item-status pro">
+										<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+											class="css-1ij4w9j">
+											<path
+												d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+												fill="currentColor"></path>
+										</svg>
+										Pro
+									</div>
+								</a>
+								<h4 class="research-content__item-title">Grayscale and X Spark Optimism
+									Across Crypto Markets</h4>
+								<div class="research-content__item-bottom item-box">
+									<div class="item-box">
+										<div class="item-box__left">
+											<img src="./images/research/author/1.avif" alt="">
+											<img src="./images/research/author/1.avif" alt="">
+										</div>
+										<div class="item-box__right">
+											<h6 class="item-box__title">Toe Bautista</h6>
+											<p class="item-box__text">Chase Devens, Toe Bautista</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 7 -->
+							<div class="research-content__item">
+								<a href='' class="research-content__item-img">
+									<img src="./images/research/1.webp" alt="">
+									<div class="research-content__item-status enterprise">
+										<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+											class="css-1ij4w9j">
+											<path
+												d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+												fill="currentColor"></path>
+										</svg>
+										Enterprise
+									</div>
+								</a>
+								<h4 class="research-content__item-title">Base: Establishing a Legitimate Layer-2
+									Presence
+								</h4>
+								<div class="research-content__item-bottom item-box">
+									<div class="item-box">
+										<div class="item-box__left">
+											<img src="./images/research/author/1.avif" alt="">
+										</div>
+										<div class="item-box__right">
+											<h6 class="item-box__title">Ally Zach, Toe Bautista</h6>
+											<p class="item-box__text">Aug 25, 2023 • 13 min read</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 8 -->
+							<div class="research-content__item">
+								<a href='' class="research-content__item-img">
+									<img src="./images/research/2.webp" alt="">
+									<div class="research-content__item-status pro">
+										<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+											class="css-1ij4w9j">
+											<path
+												d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+												fill="currentColor"></path>
+										</svg>
+										Pro
+									</div>
+								</a>
+								<h4 class="research-content__item-title">friend.tech: Social Financialization Built on
+									Base
+								</h4>
+								<div class="research-content__item-bottom item-box">
+									<div class="item-box">
+										<div class="item-box__left">
+											<img src="./images/research/author/1.avif" alt="">
+										</div>
+										<div class="item-box__right">
+											<h6 class="item-box__title">Toe Bautista</h6>
+											<p class="item-box__text">Aug 16, 2023 • 3 min read</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end content -->
+			<!-- banner PRO -->
+			<div class="research-pro">
+				<img class='research-pro__banner-one' src="./images/banner-one.png" alt="">
+				<img class='research-pro__banner-decor' src="./images/decor.png" alt="">
+				<div class="research-pro__left">
+					<h6 class="research-pro__left-subtitle">Upgrade to <span>Cryptonomy Pro</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" viewBox="0 0 25 16" fill="none">
+							<path
+								d="M24.4692 1.44854C24.3876 1.24518 24.6164 0.601886 24.4692 0.448536C24.4452 0.423534 23.4932 0.470205 23.4692 0.448536C23.338 0.326856 23.6356 0.518544 23.4692 0.448536C23.2948 0.373528 22.6548 0.45687 22.4692 0.448536C22.4452 0.448536 22.4932 0.448536 22.4692 0.448536H18.4692C17.586 0.448536 16.4692 1.52844 16.4692 2.44854C16.4692 3.36864 17.586 3.44854 18.4692 3.44854H19.4692L13.4692 9.44854L10.4692 7.44854C9.22116 6.1584 7.71249 6.15173 6.46922 7.44854L0.469224 12.4485C-0.156408 13.1003 -0.156408 14.7968 0.469224 15.4485C0.781239 15.7736 2.0596 15.4485 2.46922 15.4485C2.87884 15.4485 3.15721 15.7736 3.46922 15.4485L8.46922 9.44854L11.4692 12.4485C12.7221 13.742 14.226 13.7487 15.4692 12.4485L21.4692 6.44854V7.44854C21.4692 8.36864 21.586 8.44854 22.4692 8.44854C23.3525 8.44854 24.4692 8.36864 24.4692 7.44854V2.44854C24.4692 2.23185 24.5492 1.65189 24.4692 1.44854Z"
+								fill="#FFE014" />
+						</svg>
+					</h6>
+					<h2 class="research-pro__left-title">Deeper Research and Data</h2>
+					<a href="#" class='research-pro__left-link'>Learn More</a>
+				</div>
+				<ul class="research-pro__right">
+					<li class='research-pro__right-item'>
+						<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+							<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+						</svg>
+						Screener Access: Create up to 5 Screens
+					</li>
+					<li class='research-pro__right-item'>
+						<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+							<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+						</svg>
+						Up to 10 Saved Tradingview charts
+					</li>
+					<li class='research-pro__right-item'>
+						<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+							<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+						</svg>
+						Unlimited Watchlists
+					</li>
+					<li class='research-pro__right-item'>
+						<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+							<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+						</svg>
+						Live Newsfeed with AI Summaries
+					</li>
+					<li class='research-pro__right-item'>
+						<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+							<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+						</svg>
+						Daily & Weekly AI Digests on Watchlists
+					</li>
+					<li class='research-pro__right-item'>
+						<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+							<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+						</svg>
+						Daily Governance Alerts
+					</li>
+					<li class='research-pro__right-item'>
+						<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+							<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+						</svg>
+						Daily Professional Research
+					</li>
+				</ul>
+			</div>
+			<!-- end banner Pro -->
+			<!-- start two content block -->
+			<div class="research-content">
+				<div class="container">
+					<div class="research-content__wrapper">
+						<!-- 1 -->
+						<div class="research-content__item">
+							<a href='' class="research-content__item-img">
+								<img src="./images/research/1.webp" alt="">
+								<div class="research-content__item-status pro">
+									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+										class="css-1ij4w9j">
+										<path
+											d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+											fill="currentColor"></path>
+									</svg>
+									Pro
+								</div>
+							</a>
+							<h4 class="research-content__item-title">Spoiler Alert – Coinbase Q3 Revenue Estimates
+							</h4>
+							<div class="research-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/research/author/1.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h6 class="item-box__title">Toe Bautista</h6>
+										<p class="item-box__text">a day ago • 6 min read</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 2 -->
+						<div class="research-content__item">
+							<a href='' class="research-content__item-img">
+								<img src="./images/research/2.webp" alt="">
+								<div class="research-content__item-status pro">
+									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+										class="css-1ij4w9j">
+										<path
+											d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+											fill="currentColor"></path>
+									</svg>
+									Pro
+								</div>
+							</a>
+							<h4 class="research-content__item-title">Grayscale and X Spark Optimism
+								Across Crypto Markets</h4>
+							<div class="research-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/research/author/1.avif" alt="">
+										<img src="./images/research/author/1.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h6 class="item-box__title">Toe Bautista</h6>
+										<p class="item-box__text">Chase Devens, Toe Bautista</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 3 -->
+						<div class="research-content__item">
+							<a href='' class="research-content__item-img">
+								<img src="./images/research/1.webp" alt="">
+								<div class="research-content__item-status enterprise">
+									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+										class="css-1ij4w9j">
+										<path
+											d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+											fill="currentColor"></path>
+									</svg>
+									Enterprise
+								</div>
+							</a>
+							<h4 class="research-content__item-title">Base: Establishing a Legitimate Layer-2 Presence
+							</h4>
+							<div class="research-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/research/author/1.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h6 class="item-box__title">Ally Zach, Toe Bautista</h6>
+										<p class="item-box__text">Aug 25, 2023 • 13 min read</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 4 -->
+						<div class="research-content__item">
+							<a href='' class="research-content__item-img">
+								<img src="./images/research/2.webp" alt="">
+								<div class="research-content__item-status pro">
+									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+										class="css-1ij4w9j">
+										<path
+											d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+											fill="currentColor"></path>
+									</svg>
+									Pro
+								</div>
+							</a>
+							<h4 class="research-content__item-title">friend.tech: Social Financialization Built on Base
+							</h4>
+							<div class="research-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/research/author/1.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h6 class="item-box__title">Toe Bautista</h6>
+										<p class="item-box__text">Aug 16, 2023 • 3 min read</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 5 -->
+						<!-- 6 -->
+						<div class="research-content__item">
+							<a href='' class="research-content__item-img">
+								<img src="./images/research/1.webp" alt="">
+								<div class="research-content__item-status pro">
+									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+										class="css-1ij4w9j">
+										<path
+											d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+											fill="currentColor"></path>
+									</svg>
+									Pro
+								</div>
+							</a>
+							<h4 class="research-content__item-title">Spoiler Alert – Coinbase Q3 Revenue Estimates
+							</h4>
+							<div class="research-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/research/author/1.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h6 class="item-box__title">Toe Bautista</h6>
+										<p class="item-box__text">a day ago • 6 min read</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 6 -->
+						<div class="research-content__item">
+							<a href='' class="research-content__item-img">
+								<img src="./images/research/2.webp" alt="">
+								<div class="research-content__item-status pro">
+									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+										class="css-1ij4w9j">
+										<path
+											d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+											fill="currentColor"></path>
+									</svg>
+									Pro
+								</div>
+							</a>
+							<h4 class="research-content__item-title">Grayscale and X Spark Optimism
+								Across Crypto Markets</h4>
+							<div class="research-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/research/author/1.avif" alt="">
+										<img src="./images/research/author/1.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h6 class="item-box__title">Toe Bautista</h6>
+										<p class="item-box__text">Chase Devens, Toe Bautista</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 7 -->
+						<div class="research-content__item">
+							<a href='' class="research-content__item-img">
+								<img src="./images/research/1.webp" alt="">
+								<div class="research-content__item-status enterprise">
+									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+										class="css-1ij4w9j">
+										<path
+											d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+											fill="currentColor"></path>
+									</svg>
+									Enterprise
+								</div>
+							</a>
+							<h4 class="research-content__item-title">Base: Establishing a Legitimate Layer-2 Presence
+							</h4>
+							<div class="research-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/research/author/1.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h6 class="item-box__title">Ally Zach, Toe Bautista</h6>
+										<p class="item-box__text">Aug 25, 2023 • 13 min read</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 8 -->
+						<div class="research-content__item">
+							<a href='' class="research-content__item-img">
+								<img src="./images/research/2.webp" alt="">
+								<div class="research-content__item-status pro">
+									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+										class="css-1ij4w9j">
+										<path
+											d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+											fill="currentColor"></path>
+									</svg>
+									Pro
+								</div>
+							</a>
+							<h4 class="research-content__item-title">friend.tech: Social Financialization Built on Base
+							</h4>
+							<div class="research-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/research/author/1.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h6 class="item-box__title">Toe Bautista</h6>
+										<p class="item-box__text">Aug 16, 2023 • 3 min read</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end -->
+					</div>
+				</div>
+			</div>
+			<!-- end two block content -->
+			<!-- Messari Enterprise banner -->
+			<div class="research-enterprise">
+				<img class='research-enterprise__img' src="./images/banner-two.png" alt="">
+				<div class="research-enterprise__left">
+					<h6 class="research-pro__left-subtitle">Upgrade to <span>Messari Enterprise</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" viewBox="0 0 25 16" fill="none">
+							<path
+								d="M24.4692 1.44854C24.3876 1.24518 24.6164 0.601886 24.4692 0.448536C24.4452 0.423534 23.4932 0.470205 23.4692 0.448536C23.338 0.326856 23.6356 0.518544 23.4692 0.448536C23.2948 0.373528 22.6548 0.45687 22.4692 0.448536C22.4452 0.448536 22.4932 0.448536 22.4692 0.448536H18.4692C17.586 0.448536 16.4692 1.52844 16.4692 2.44854C16.4692 3.36864 17.586 3.44854 18.4692 3.44854H19.4692L13.4692 9.44854L10.4692 7.44854C9.22116 6.1584 7.71249 6.15173 6.46922 7.44854L0.469224 12.4485C-0.156408 13.1003 -0.156408 14.7968 0.469224 15.4485C0.781239 15.7736 2.0596 15.4485 2.46922 15.4485C2.87884 15.4485 3.15721 15.7736 3.46922 15.4485L8.46922 9.44854L11.4692 12.4485C12.7221 13.742 14.226 13.7487 15.4692 12.4485L21.4692 6.44854V7.44854C21.4692 8.36864 21.586 8.44854 22.4692 8.44854C23.3525 8.44854 24.4692 8.36864 24.4692 7.44854V2.44854C24.4692 2.23185 24.5492 1.65189 24.4692 1.44854Z"
+								fill="#FFE014" />
+						</svg>
+					</h6>
+					<h2 class="research-enterprise__left-title">Unlock Everything</h2>
+					<a href="#" class='research-enterprise__left-link'>Learn More</a>
+				</div>
+				<ul class="research-enterprise__right">
+					<li class='research-enterprise__right-item'>
+						<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+							<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+						</svg>
+						Unlimited Watchlists, Screeners, and Charts
+					</li>
+					<li class='research-enterprise__right-item'>
+						<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+							<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+						</svg>
+						Fundraising Data Screener
+					</li>
+					<li class='research-enterprise__right-item'>
+						<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+							<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+						</svg>
+						In-Depth Diligence Reports
+					</li>
+					<li class='research-enterprise__right-item'>
+						<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+							<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+						</svg>
+						Enterprise-Grade Research
+					</li>
+					<li class='research-enterprise__right-item'>
+						<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+							<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+						</svg>
+						Real-Time Key Developments Feed
+					</li>
+					<li class='research-enterprise__right-item'>
+						<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+							<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+						</svg>
+						Live Newsfeed with AI Summaries
+					</li>
+					<li class='research-enterprise__right-item'>
+						<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+							<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+						</svg>
+						Daily & Weekly AI Digests on Watchlists
+					</li>
+					<li class='research-enterprise__right-item'>
+						<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+							<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+						</svg>
+						Real-Time Alerts
+					</li>
+					<li class='research-enterprise__right-item'>
+						<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+							<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+						</svg>
+						Daily Historical Market Data & News API
+					</li>
+					<li class='research-enterprise__right-item'>
+						<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CheckIcon">
+							<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+						</svg>
+						CSV Downloads
+					</li>
+				</ul>
+			</div>
+			<!-- end Messari Enterprise banner -->
+			<!-- three content block -->
+			<div class="research-content">
+				<div class="container">
+					<div class="research-content__wrapper">
+						<!-- 1 -->
+						<div class="research-content__item">
+							<a href='' class="research-content__item-img">
+								<img src="./images/research/1.webp" alt="">
+								<div class="research-content__item-status pro">
+									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+										class="css-1ij4w9j">
+										<path
+											d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+											fill="currentColor"></path>
+									</svg>
+									Pro
+								</div>
+							</a>
+							<h4 class="research-content__item-title">Spoiler Alert – Coinbase Q3 Revenue Estimates
+							</h4>
+							<div class="research-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/research/author/1.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h6 class="item-box__title">Toe Bautista</h6>
+										<p class="item-box__text">a day ago • 6 min read</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 2 -->
+						<div class="research-content__item">
+							<a href='' class="research-content__item-img">
+								<img src="./images/research/2.webp" alt="">
+								<div class="research-content__item-status pro">
+									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+										class="css-1ij4w9j">
+										<path
+											d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+											fill="currentColor"></path>
+									</svg>
+									Pro
+								</div>
+							</a>
+							<h4 class="research-content__item-title">Grayscale and X Spark Optimism
+								Across Crypto Markets</h4>
+							<div class="research-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/research/author/1.avif" alt="">
+										<img src="./images/research/author/1.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h6 class="item-box__title">Toe Bautista</h6>
+										<p class="item-box__text">Chase Devens, Toe Bautista</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 3 -->
+						<div class="research-content__item">
+							<a href='' class="research-content__item-img">
+								<img src="./images/research/1.webp" alt="">
+								<div class="research-content__item-status enterprise">
+									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+										class="css-1ij4w9j">
+										<path
+											d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+											fill="currentColor"></path>
+									</svg>
+									Enterprise
+								</div>
+							</a>
+							<h4 class="research-content__item-title">Base: Establishing a Legitimate Layer-2 Presence
+							</h4>
+							<div class="research-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/research/author/1.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h6 class="item-box__title">Ally Zach, Toe Bautista</h6>
+										<p class="item-box__text">Aug 25, 2023 • 13 min read</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 4 -->
+						<div class="research-content__item">
+							<a href='' class="research-content__item-img">
+								<img src="./images/research/2.webp" alt="">
+								<div class="research-content__item-status pro">
+									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+										class="css-1ij4w9j">
+										<path
+											d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+											fill="currentColor"></path>
+									</svg>
+									Pro
+								</div>
+							</a>
+							<h4 class="research-content__item-title">friend.tech: Social Financialization Built on Base
+							</h4>
+							<div class="research-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/research/author/1.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h6 class="item-box__title">Toe Bautista</h6>
+										<p class="item-box__text">Aug 16, 2023 • 3 min read</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 5 -->
+						<!-- 6 -->
+						<div class="research-content__item">
+							<a href='' class="research-content__item-img">
+								<img src="./images/research/1.webp" alt="">
+								<div class="research-content__item-status pro">
+									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+										class="css-1ij4w9j">
+										<path
+											d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+											fill="currentColor"></path>
+									</svg>
+									Pro
+								</div>
+							</a>
+							<h4 class="research-content__item-title">Spoiler Alert – Coinbase Q3 Revenue Estimates
+							</h4>
+							<div class="research-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/research/author/1.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h6 class="item-box__title">Toe Bautista</h6>
+										<p class="item-box__text">a day ago • 6 min read</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 6 -->
+						<div class="research-content__item">
+							<a href='' class="research-content__item-img">
+								<img src="./images/research/2.webp" alt="">
+								<div class="research-content__item-status pro">
+									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+										class="css-1ij4w9j">
+										<path
+											d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+											fill="currentColor"></path>
+									</svg>
+									Pro
+								</div>
+							</a>
+							<h4 class="research-content__item-title">Grayscale and X Spark Optimism
+								Across Crypto Markets</h4>
+							<div class="research-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/research/author/1.avif" alt="">
+										<img src="./images/research/author/1.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h6 class="item-box__title">Toe Bautista</h6>
+										<p class="item-box__text">Chase Devens, Toe Bautista</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 7 -->
+						<div class="research-content__item">
+							<a href='' class="research-content__item-img">
+								<img src="./images/research/1.webp" alt="">
+								<div class="research-content__item-status enterprise">
+									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+										class="css-1ij4w9j">
+										<path
+											d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+											fill="currentColor"></path>
+									</svg>
+									Enterprise
+								</div>
+							</a>
+							<h4 class="research-content__item-title">Base: Establishing a Legitimate Layer-2 Presence
+							</h4>
+							<div class="research-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/research/author/1.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h6 class="item-box__title">Ally Zach, Toe Bautista</h6>
+										<p class="item-box__text">Aug 25, 2023 • 13 min read</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 8 -->
+						<div class="research-content__item">
+							<a href='' class="research-content__item-img">
+								<img src="./images/research/2.webp" alt="">
+								<div class="research-content__item-status pro">
+									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+										class="css-1ij4w9j">
+										<path
+											d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+											fill="currentColor"></path>
+									</svg>
+									Pro
+								</div>
+							</a>
+							<h4 class="research-content__item-title">friend.tech: Social Financialization Built on Base
+							</h4>
+							<div class="research-content__item-bottom item-box">
+								<div class="item-box">
+									<div class="item-box__left">
+										<img src="./images/research/author/1.avif" alt="">
+									</div>
+									<div class="item-box__right">
+										<h6 class="item-box__title">Toe Bautista</h6>
+										<p class="item-box__text">Aug 16, 2023 • 3 min read</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end -->
+						<!-- end three content block -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="research-main__rows">
+			<table class="research-table">
+				<thead class="research-thead">
+					<tr class="research-thead__row">
+						<th class='thead__info'>Date</th>
+						<th class='thead__info thead__title'>title</th>
+						<th class='thead__info'>Assets</th>
+						<th class='thead__info'>Authors</th>
+						<th class='thead__info'>Subscription tier</th>
+						<th class='thead__info'>Tags</th>
+					</tr>
+				</thead>
+				<tbody class="research-tbody">
+					<tr class="research-tbody__row">
+						<td class='tbody__element tbody__date'>Nov 3, 2023</td>
+						<td class='tbody__link'>
+							<a href="#">The Week in Crypto Policy: Decentralization & Policy Considerations</a>
+						</td>
+						<td class='tbody__element'>-</td>
+						<td class='tbody__element flex'>
+							<div class='flex__img'>
+								<img src="./images/research/author/filter/1.avif" alt="">
+							</div>
+							<p>George Leonardo</p>
+						</td>
+						<td class='tbody__element'>
+							<a href="#" class='tag pro'>
+								<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LockIcon">
+									<path
+										d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z">
+									</path>
+								</svg>
+								<span>Pro</span>
+							</a>
+						</td>
+						<td class='tbody__element'>
+							<div class="tbody__element-tag">Policy</div>
+						</td>
+					</tr>
+					<tr class="research-tbody__row">
+						<td class='tbody__element tbody__date'>Nov 3, 2023</td>
+						<td class='tbody__link'>
+							<a href="#">The Week in Crypto Policy: Decentralization & Policy Considerations</a>
+						</td>
+						<td class='tbody__element'>-</td>
+						<td class='tbody__element flex'>
+							<div class='flex__img'>
+								<img src="./images/research/author/filter/1.avif" alt="">
+							</div>
+							<p>George Leonardo</p>
+						</td>
+						<td class='tbody__element'>
+							<a href="#" class='tag enterprise'>
+								<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LockIcon">
+									<path
+										d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z">
+									</path>
+								</svg>
+								<span>Enterprise</span>
+							</a>
+						</td>
+						<td class='tbody__element'>
+							<div class="tbody__element-tag">Policy</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</main>
+	<div class='mob-filter__list-tag'>
+		<div class="mob-filter__list-tag-inner">
+
+		</div>
+		<div class="mob-filter__list-tag-content">
+			<div class="top-list">
+				All Tags
+				<button class="top-list__tag-button">
+					<svg class="top-list__tag-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+						data-testid="CloseIcon">
+						<path
+							d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+						</path>
+					</svg>
+				</button>
+			</div>
+			<ul class="list-tag__ul">
+				<li class='list-tag__ul-li'>
+					<span data-tag="All-Tags" class='box-item active'>All Tags</span>
+					<svg class="list-tag__ul-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+						data-testid="CheckIcon">
+						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+					</svg>
+				</li>
+				<li class='list-tag__ul-li'>
+					<span data-tag="DAOs" class='box-item'>DAOs</span>
+					<svg class="list-tag__ul-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+						data-testid="CheckIcon">
+						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+					</svg>
+				</li>
+				<li class='list-tag__ul-li'>
+					<span data-tag="DeFi" class='box-item'>DeFi</span>
+					<svg class="list-tag__ul-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+						data-testid="CheckIcon">
+						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+					</svg>
+				</li>
+				<li class='list-tag__ul-li'>
+					<span data-tag="Layer-1" class='box-item'>Layer-1</span>
+					<svg class="list-tag__ul-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+						data-testid="CheckIcon">
+						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+					</svg>
+				</li>
+				<li class='list-tag__ul-li'>
+					<span data-tag="Layer-2" class='box-item'>Layer-2</span>
+					<svg class="list-tag__ul-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+						data-testid="CheckIcon">
+						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+					</svg>
+				</li>
+				<li class='list-tag__ul-li'>
+					<span data-tag="Web3" class='box-item'>Web3</span>
+					<svg class="list-tag__ul-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+						data-testid="CheckIcon">
+						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+					</svg>
+				</li>
+				<li class='list-tag__ul-li'>
+					<span data-tag="NFTs" class='box-item'>NFTs</span>
+					<svg class="list-tag__ul-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+						data-testid="CheckIcon">
+						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+					</svg>
+				</li>
+				<li class='list-tag__ul-li'>
+					<span data-tag="Macro" class='box-item'>Macro</span>
+					<svg class="list-tag__ul-svg" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+						data-testid="CheckIcon">
+						<path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+					</svg>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="mob-filter__author">
+		<div class="mob-filter__author-overlay">
+		</div>
+		<div class="mob-filter__author-content mob-author">
+			<div class="mob-author__top">
+				<span>Authors</span>
+				<button class='mob-author__top-close'>
+					<svg class="" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CloseIcon">
+						<path
+							d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+						</path>
+					</svg>
+				</button>
+			</div>
+			<ul class="mob-author__list author-filter__content-list">
+				<li class="author-filter__item mob">
+					<label class='author-filter__label' for="author__checkbox21">
+						<input type="checkbox" id='author__checkbox21' class='assets-filter__input'>
+						<span class='assets__checkbox'></span>
+						<p class='author-filter__center'>
+							Ally Zach
+						</p>
+						<div class='author-filter__item-img'>
+							<img src="./images/research/author/filter/1.avif" alt="">
+						</div>
+					</label>
+				</li>
+				<!-- 2 -->
+				<li class="author-filter__item mob">
+					<label class='author-filter__label' for="author__checkbox22">
+						<input type="checkbox" id='author__checkbox22' class='assets-filter__input'>
+						<span class='assets__checkbox'></span>
+						<p class='author-filter__center'>
+							AJ Scolaro
+						</p>
+						<div class='author-filter__item-img'>
+							<img src="./images/research/author/filter/2.avif" alt="">
+						</div>
+					</label>
+				</li>
+				<!-- 3 -->
+				<li class="author-filter__item mob">
+					<label class='author-filter__label' for="author__checkbox23">
+						<input type="checkbox" id='author__checkbox23' class='assets-filter__input'>
+						<span class='assets__checkbox'></span>
+						<p class='author-filter__center'>
+							John_TotalValue_Locke
+						</p>
+						<div class='author-filter__item-img'>
+							<img src="./images/research/author/filter/3.avif" alt="">
+						</div>
+					</label>
+				</li>
+				<!-- 4 -->
+				<li class="author-filter__item mob">
+					<label class='author-filter__label' for="author__checkbox24">
+						<input type="checkbox" id='author__checkbox24' class='assets-filter__input'>
+						<span class='assets__checkbox'></span>
+						<p class='author-filter__center'>
+							Ainsley To
+						</p>
+						<div class='author-filter__item-img'>
+							<img src="./images/research/author/filter/4.avif" alt="">
+						</div>
+					</label>
+				</li>
+				<!-- 5 -->
+				<li class="author-filter__item mob">
+					<label class='author-filter__label' for="author__checkbox25">
+						<input type="checkbox" id='author__checkbox25' class='assets-filter__input'>
+						<span class='assets__checkbox'></span>
+						<p class='author-filter__center'>
+							AJ Scolaro
+						</p>
+						<div class='author-filter__item-img'>
+							<img src="./images/research/author/filter/5.avif" alt="">
+						</div>
+					</label>
+				</li>
+				<!-- 6 -->
+				<li class="author-filter__item mob">
+					<label class='author-filter__label' for="author__checkbox26">
+						<input type="checkbox" id='author__checkbox26' class='assets-filter__input'>
+						<span class='assets__checkbox'></span>
+						<p class='author-filter__center'>
+							Jerry Sun
+						</p>
+						<div class='author-filter__item-img'>
+							<img src="./images/research/author/filter/6.avif" alt="">
+						</div>
+					</label>
+				</li>
+				<!-- 7 -->
+				<li class="author-filter__item mob">
+					<label class='author-filter__label' for="author__checkbox27">
+						<input type="checkbox" id='author__checkbox27' class='assets-filter__input'>
+						<span class='assets__checkbox'></span>
+						<p class='author-filter__center'>
+							AJ Scolaro
+						</p>
+						<div class='author-filter__item-img'>
+							<img src="./images/research/author/filter/7.avif" alt="">
+						</div>
+					</label>
+				</li>
+				<!-- 8 -->
+				<li class="author-filter__item mob">
+					<label class='author-filter__label' for="author__checkbox28">
+						<input type="checkbox" id='author__checkbox28' class='assets-filter__input'>
+						<span class='assets__checkbox'></span>
+						<p class='author-filter__center'>
+							AJ Scolaro
+						</p>
+						<div class='author-filter__item-img'>
+							<img src="./images/research/author/filter/8.avif" alt="">
+						</div>
+					</label>
+				</li>
+				<!-- 9 -->
+				<li class="author-filter__item mob">
+					<label class='author-filter__label' for="author__checkbox29">
+						<input type="checkbox" id='author__checkbox29' class='assets-filter__input'>
+						<span class='assets__checkbox'></span>
+						<p class='author-filter__center'>
+							AJ Scolaro
+						</p>
+						<div class='author-filter__item-img'>
+							<img src="./images/research/author/filter/9.avif" alt="">
+						</div>
+					</label>
+				</li>
+				<!-- 10 -->
+				<li class="author-filter__item mob">
+					<label class='author-filter__label' for="author__checkbox30">
+						<input type="checkbox" id='author__checkbox30' class='assets-filter__input'>
+						<span class='assets__checkbox'></span>
+						<p class='author-filter__center'>
+							AJ Scolaro
+						</p>
+						<div class='author-filter__item-img'>
+							<img src="./images/research/author/filter/10.avif" alt="">
+						</div>
+					</label>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="mob-filter__assets">
+		<div class="mob-filter__assets-overlay"></div>
+		<div class="mob-filter__assets-content mob-assets">
+			<div class="mob-assets__top">
+				<span>Assets</span>
+				<button class='mob-assets__top-close'>
+					<svg class="" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CloseIcon">
+						<path
+							d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+						</path>
+					</svg>
+				</button>
+			</div>
+			<div class="assets-filter__content-center">
+				<div class="center-top">
+					<div class="center-top__row">
+						<h6>Watchlists</h6>
+						<a href="#">Create new</a>
+					</div>
+					<p class="center-top__text">You have not created any watchlists.</p>
+					<div class="center-top__sublist">
+						<h6>Assets</h6>
+						<label for="select-all-checkbox">
+							<input type="checkbox" id="select-all-checkbox">
+							<span id="select-all-text">Select All</span>
+						</label>
+					</div>
+				</div>
+				<p class='result__filter-text'></p>
+				<ul class="assets-filter__list">
+					<!-- 1 -->
+					<li class="assets-filter__item">
+						<label class='assets-filter__label' for="assets__checkbox20">
+							<input type="checkbox" id='assets__checkbox20' class='assets-filter__input'>
+							<span class='assets__checkbox'></span>
+							<div class='assets-filter__center'>
+								<p>Bitcoin
+								</p>
+								<span>BTC</span>
+							</div>
+							<div class='assets-filter__item-img'>
+								<img src="./images/coins/1.png" alt="">
+							</div>
+						</label>
+					</li>
+					<!-- 2 -->
+					<li class="assets-filter__item">
+						<label class='assets-filter__label' for="assets__checkbox21">
+							<input type="checkbox" id='assets__checkbox21' class='assets-filter__input'>
+							<span class='assets__checkbox'></span>
+							<div class='assets-filter__center'>
+								<p>Ethereum</p>
+								<span>ETH</span>
+							</div>
+							<div class='assets-filter__item-img'>
+								<img src="./images/coins/2.png" alt="">
+							</div>
+						</label>
+					</li>
+					<!-- 3 -->
+					<li class="assets-filter__item">
+						<label class='assets-filter__label' for="assets__checkbox23">
+							<input type="checkbox" id='assets__checkbox23' class='assets-filter__input'>
+							<span class='assets__checkbox'></span>
+							<div class='assets-filter__center'>
+								<p>Tether</p>
+								<span>USDT</span>
+							</div>
+							<div class='assets-filter__item-img'>
+								<img src="./images/coins/3.png" alt="">
+							</div>
+						</label>
+					</li>
+					<!-- 4 -->
+					<li class="assets-filter__item">
+						<label class='assets-filter__label' for="assets__checkbox24">
+							<input type="checkbox" id='assets__checkbox24' class='assets-filter__input'>
+							<span class='assets__checkbox'></span>
+							<div class='assets-filter__center'>
+								<p>BNB</p>
+								<span>BNB</span>
+							</div>
+							<div class='assets-filter__item-img'>
+								<img src="./images/coins/4.png" alt="">
+							</div>
+						</label>
+					</li>
+					<!-- 5 -->
+					<li class="assets-filter__item">
+						<label class='assets-filter__label' for="assets__checkbox25">
+							<input type="checkbox" id='assets__checkbox25' class='assets-filter__input'>
+							<span class='assets__checkbox'></span>
+							<div class='assets-filter__center'>
+								<p>XRP</p>
+								<span>XRP</span>
+							</div>
+							<div class='assets-filter__item-img'>
+								<img src="./images/coins/5.png" alt="">
+							</div>
+						</label>
+					</li>
+					<!-- 6 -->
+					<li class="assets-filter__item">
+						<label class='assets-filter__label' for="assets__checkbox26">
+							<input type="checkbox" id='assets__checkbox26' class='assets-filter__input'>
+							<span class='assets__checkbox'></span>
+							<div class='assets-filter__center'>
+								<p>USDC</p>
+								<span>USDC</span>
+							</div>
+							<div class='assets-filter__item-img'>
+								<img src="./images/coins/6.png" alt="">
+							</div>
+						</label>
+					</li>
+					<!-- 7 -->
+					<li class="assets-filter__item">
+						<label class='assets-filter__label' for="assets__checkbox27">
+							<input type="checkbox" id='assets__checkbox27' class='assets-filter__input'>
+							<span class='assets__checkbox'></span>
+							<div class='assets-filter__center'>
+								<p>Solana</p>
+								<span>SOL</span>
+							</div>
+							<div class='assets-filter__item-img'>
+								<img src="./images/coins/7.png" alt="">
+							</div>
+						</label>
+					</li>
+					<!-- 8 -->
+					<li class="assets-filter__item">
+						<label class='assets-filter__label' for="assets__checkbox28">
+							<input type="checkbox" id='assets__checkbox28' class='assets-filter__input'>
+							<span class='assets__checkbox'></span>
+							<div class='assets-filter__center'>
+								<p>Lido Staked Ether</p>
+								<span>STETH</span>
+							</div>
+							<div class='assets-filter__item-img'>
+								<img src="./images/coins/8.png" alt="">
+							</div>
+						</label>
+					</li>
+					<!-- 9 -->
+					<li class="assets-filter__item">
+						<label class='assets-filter__label' for="assets__checkbox29">
+							<input type="checkbox" id='assets__checkbox29' class='assets-filter__input'>
+							<span class='assets__checkbox'></span>
+							<div class='assets-filter__center'>
+								<p>Cardano</p>
+								<span>ADA</span>
+							</div>
+							<div class='assets-filter__item-img'>
+								<img src="./images/coins/9.png" alt="">
+							</div>
+						</label>
+					</li>
+					<!-- 10 -->
+					<li class="assets-filter__item">
+						<label class='assets-filter__label' for="assets__checkbox30">
+							<input type="checkbox" id='assets__checkbox30' class='assets-filter__input'>
+							<span class='assets__checkbox'></span>
+							<div class='assets-filter__center'>
+								<p>Dogecoin</p>
+								<span>DOGE</span>
+							</div>
+							<div class='assets-filter__item-img'>
+								<img src="./images/coins/10.png" alt="">
+							</div>
+						</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="js/research.js"></script>
+</body>
+
+>>>>>>> 94ae2c5a99dd264b537bca67e3280cadbbf77caa
 </html>
