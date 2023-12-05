@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/coins.css">
+	<title>Coin page</title>
+</head>
+
+<body>
+
+	<main class="coin-main">
+		<div class="coin-main__bg"></div>
+		<div class="coin-main__top">
+			<div class="container">
+				<h1 class='coin-main__title'>Buy Bitcoin in Seconds</h1>
+				<h4 class="coin-main__subtitle">Buy BTC securely with card or instant bank transfer. Start with as
+					little as $1.</h4>
+				<ul class="coin-main__top-list">
+					<li class="coin-main__top-item">
+						<div class='coin-main__top-item-img'>
+							<img src="./images/coin-page/check.svg" alt="">
+						</div>
+						<span>
+							Get up <br />
+							to 0.5% back
+						</span>
+					</li>
+					<li class="coin-main__top-item">
+						<div class='coin-main__top-item-img'>
+							<img src="./images/coin-page/check.svg" alt="">
+						</div>
+						<span>
+							Excellent <br />
+							market prices
+						</span>
+					</li>
+					<li class="coin-main__top-item">
+						<div class='coin-main__top-item-img'>
+							<img src="./images/coin-page/check.svg" alt="">
+						</div>
+						<span>
+							Earn 7% interest <br />
+							on your BTC
+						</span>
+					</li>
+					<li class="coin-main__top-item">
+						<div class='coin-main__top-item-img'>
+							<img src="./images/coin-page/check.svg" alt="">
+						</div>
+						<span>
+							Instant SEPA<br />
+							and FPS transfers
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--  -->
+		<section class="coin-calculator">
+			<div class="coin-calculator__wrapper">
+				<div class="coin-calculator__left">
+					<div class="coin-calculator__left-pay">
+						<label for="coin-calculator-pay">Pay</label>
+						<div class='coin-calculator__pay-block'>
+							<input type="text" id='coin-calculator-pay' value='$1,000'>
+							<div class="coin-calculator__pay-coin">
+								<div class="coin-calculator__pay-image">
+									<img src="./images/coin/coin-dollar.png" alt="">
+								</div>
+								<p class="coin-calculator__pay-coin-name"> USD</p>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+									fill="none">
+									<path d="M8 10L12 14L16 10" stroke="black" stroke-width="2" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="coin-calculator__left-pay">
+						<label for="coin-calculator-pay">Receive</label>
+						<div class='coin-calculator__pay-block'>
+							<input type="text" id='coin-calculator-pay' value='0.02735'>
+							<div class="coin-calculator__pay-coin receive">
+								<div class="coin-calculator__pay-image">
+									<img src="./images/coin/btc.png" alt="">
+								</div>
+								<p class="coin-calculator__pay-coin-name">BTC</p>
+							</div>
+						</div>
+					</div>
+					<button class="coin-calculator__left-button">Buy Bitcoin</button>
+				</div>
+				<div class="coin-calculator__right">
+					<div class="coin-calculator__right-cours">
+						1 BTC ≈ <span>$36 568, 00</span>
+					</div>
+					<div class="coin-calculator__right-payment">
+						<img src="./images/coin/payment.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--  -->
+		<!--  -->
+		<section class="coin-info">
+			<div class="coin-info__wrapper">
+				<div class="coin-info__top">
+					<div class="coin-info__top-left coin-left">
+						<div class="coin-left__top">
+							<div class="coin-left__top-name">
+								<div class="coin-left__top-icon">
+									<img src="./images/coin/btc.png" alt="">
+								</div>
+								<div class="df-col">
+									<h4>Bitcoin</h4>
+									<h6>BTC</h6>
+								</div>
+							</div>
+							<div class="coin-left__top-price down df-col">
+								<h5>$36,568</h5>
+								<div class="coin-left__top-price-down">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M5 8L12 16L19 8" fill="#EC524A" />
+									</svg>
+									<span>-1.93% ($721.24)</span>
+								</div>
+							</div>
+						</div>
+						<div class="coin-left__content">
+							<div class="coin-left__content-top">
+
+								<div class="box-item">
+									<input class="c-radio-tag" id="chart-option-hour" type="radio" name="timeframe"
+										value="hour">
+									<label class="box-item__label" for="chart-option-hour">
+										1H </label>
+								</div>
+
+								<div class="box-item">
+									<input class="c-radio-tag" id="chart-option-four-hours" type="radio"
+										name="timeframe" value="four-hours" checked>
+									<label class="box-item__label" for="chart-option-four-hours">
+										4H </label>
+								</div>
+
+								<div class="box-item">
+									<input class="c-radio-tag" id="chart-option-day" type="radio" name="timeframe"
+										value="day" checked>
+									<label class="box-item__label" for="chart-option-day">
+										1D </label>
+								</div>
+
+								<div class="box-item">
+									<input class="c-radio-tag" id="chart-option-week" type="radio" name="timeframe"
+										value="week">
+									<label class="box-item__label" for="chart-option-week">
+										7D </label>
+								</div>
+
+								<div class="box-item">
+									<input class="c-radio-tag" id="chart-option-month" type="radio" name="timeframe"
+										value="month">
+									<label class="box-item__label" for="chart-option-month">
+										1M </label>
+								</div>
+
+								<div class="box-item">
+									<input class="c-radio-tag" id="chart-option-year" type="radio" name="timeframe"
+										value="year">
+									<label class="box-item__label" for="chart-option-year">
+										1Y </label>
+								</div>
+
+								<div class="box-item">
+									<input class="c-radio-tag" id="chart-option-all" type="radio" name="timeframe"
+										value="all">
+									<label class="box-item__label" for="chart-option-all">
+										ALL </label>
+
+								</div>
+							</div>
+							<div class="coin-left__content-center">
+								<ul class="coin-left__content-left">
+									<li>$37,600.00</li>
+									<li>$37,200.00</li>
+									<li>$36,800.00</li>
+									<li>$36,400.00</li>
+									<li>$36,000.00</li>
+									<li>$35,600.00</li>
+								</ul>
+								<div class="coin-left__content-right">
+									<div class="coin-left__content-right-top">
+										<img src="./images/coin/coin-graf.png" alt="">
+									</div>
+									<ul class="coin-left__content-right-bottom">
+										<li>01:20 PM</li>
+										<li>06:08 PM</li>
+										<li>10:56 PM</li>
+										<li>03:44 AM</li>
+										<li>08:32 AM</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="coin-info__top-right box">
+						<h6 class='box-name'>Market Stats</h6>
+						<ul class="box-list">
+							<li class='box-item'>
+								<p class="box-item__name">Market Rank</p>
+								<p class="box-item__price">1</p>
+							</li>
+							<li class='box-item'>
+								<p class="box-item__name">Market Cap</p>
+								<p class="box-item__price">$714.77B</p>
+							</li>
+							<li class='box-item'>
+								<p class="box-item__name">24H Volume</p>
+								<p class="box-item__price">$25.02B</p>
+							</li>
+							<li class='box-item'>
+								<p class="box-item__name">24H High</p>
+								<p class="box-item__price">$37,410</p>
+							</li>
+							<li class='box-item'>
+								<p class="box-item__name">All-Time High</p>
+								<p class="box-item__price">$69,045</p>
+							</li>
+							<li class='box-item'>
+								<p class="box-item__name">Circulating Supply</p>
+								<p class="box-item__price">19,549,606</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="coin-info__content">
+					<h6>Bitcoin (BTC) Price Performance</h6>
+					<p>The current Bitcoin price is $36,568 as in the last 24 hours its value has fallen by 1.86%.
+						Bitcoin
+						is down 47.05% from its all-time high of $69,045. Bitcoin ranks number 1 in terms of market
+						capitalization, representing 49.71% of the entire crypto market. Bitcoin is a decentralized
+						currency, which means you can buy, sell, and exchange it without having to rely on traditional
+						monetary systems.</p>
+					<h6>Bitcoin (BTC) Price Performance</h6>
+					<p>Bitcoin (BTC) is the most popular and largest cryptocurrency by market cap. It follows an
+						ideology
+						first introduced in a whitepaper published in 2008 by Satoshi Nakamoto.</p>
+					<p>As a decentralized digital currency that operates on a peer-to-peer network, Bitcoin allows for
+						transactions to be made directly between individuals without the need for intermediaries. All
+						transfers are validated, confirmed, and recorded on a public ledger called the blockchain. The
+						system provides a safe and transparent means for anyone with internet access to trade currency
+						and
+						prove ownership of their funds.</p>
+					<p>One of the most important characteristics of Bitcoin is its finite quantity. There will only ever
+						be
+						21 million Bitcoins in circulation, which is enforced through a process called Proof-of-Work.
+						This
+						involves miners competing to solve complex mathematical problems to validate transactions and
+						earn
+						newly created coins. As the supply of Bitcoins approaches its limit, it is expected that the
+						value
+						of the currency will continue to rise.</p>
+					<p>Bitcoin has come a long way since its inception, and today it is being adopted by both crypto
+						enthusiasts and well-known financial institutions. With the rise of cryptocurrency exchanges and
+						payment processors, it has become easier for people to buy Bitcoin and other digital assets with
+						traditional currencies like the US dollar, British pound, or euro. This has opened up new
+						opportunities for people who may not have had access to traditional financial markets.</p>
+					<p>The mainstream adoption of Bitcoin has also led to greater regulatory attention. Governments
+						around
+						the world are now working on developing frameworks to regulate Bitcoin and other
+						cryptocurrencies,
+						which will provide greater clarity and stability for users.</p>
+				</div>
+			</div>
+		</section>
+		<!--  -->
+		<!-- why -->
+		<section class="coin-why">
+			<div class="container">
+				<h2 class="coin-why__title">Why Cryptonomy Is the Right Place to Buy Bitcoin</h2>
+				<div class="coin-why__box">
+					<div class="coin-why__box-item">
+						<div class="df-col">
+							<div class="coin-why__box-img">
+								<img src="./images/coin/why/1.svg" alt="">
+							</div>
+							<h6>Buy Instantly</h6>
+						</div>
+						<p class="coin-why__box-text">Earn daily compounding interest on your BTC, at industry-leading
+							rates with our Earn on Crypto suite.</p>
+					</div>
+					<div class="coin-why__box-item">
+						<div class="df-col">
+							<div class="coin-why__box-img">
+								<img src="./images/coin/why/2.svg" alt="">
+							</div>
+							<h6>Start with Just $1</h6>
+						</div>
+						<p class="coin-why__box-text">Start with as little as $1 and go up to $15,000 in just one
+							purchase.</p>
+					</div>
+					<div class="coin-why__box-item">
+						<div class="df-col">
+							<div class="coin-why__box-img">
+								<img src="./images/coin/why/3.svg" alt="">
+							</div>
+							<h6>Get Excellent Prices</h6>
+						</div>
+						<p class="coin-why__box-text">Get the most cost-efficient price across the top 10 crypto
+							exchanges worldwide.</p>
+					</div>
+					<div class="coin-why__box-item">
+						<div class="df-col">
+							<div class="coin-why__box-img">
+								<img src="./images/coin/why/4.svg" alt="">
+							</div>
+							<h6>Stay Secure</h6>
+						</div>
+						<p class="coin-why__box-text">Benefit from a top-tier insurance secured by Nexo’s trusted
+							custodians.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end why -->
+		<!-- banner -->
+		<section class="coin-banner">
+			<img class='coin-banner__bg-one' src="./images/banner-one.png" alt="">
+			<img src="./images/decor.png" class="coin-banner__bg">
+			<div class="container">
+				<div class="coin-banner__content">
+					<div class="coin-banner__content-left">
+						<h2 class="coin-banner__content-title">How to Buy Bitcoin</h2>
+						<p class="coin-banner__content-text">Buy, earn, swap, and borrow against your crypto instantly
+							and securely on Cryptonomy.</p>
+						<a href="#" class="coin-banner__content-link">Buy Bitcoin</a>
+					</div>
+					<ul class="coin-banner__content-right">
+						<li class='coin-banner__content-right-item'>
+							<div class="coin-banner__content-right-icon">
+								<img src="./images/check-number.svg" alt="">
+								<p>1</p>
+							</div>
+							<div class="df-col">
+								<h6>Select Asset</h6>
+								<p>Click on the “Buy” button on your Dashboard and select the desired asset.</p>
+							</div>
+						</li>
+						<li class='coin-banner__content-right-item'>
+							<div class="coin-banner__content-right-icon">
+								<img src="./images/check-number.svg" alt="">
+								<p>2</p>
+							</div>
+							<div class="df-col">
+								<h6>Enter Amount</h6>
+								<p>Select the amount you want to buy and choose your payment method. </p>
+							</div>
+						</li>
+						<li class='coin-banner__content-right-item'>
+							<div class="coin-banner__content-right-icon">
+								<img src="./images/check-number.svg" alt="">
+								<p>3</p>
+							</div>
+							<div class="df-col">
+								<h6>Complete the Purchase</h6>
+								<p>Preview your transaction details, and confirm the purchase. It's that easy!</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- end banner -->
+		<!-- coin what -->
+		<section class="coin-what">
+			<div class="container">
+				<h2 class="coin-what__title">What Can You Do with Your Bitcoin?</h2>
+				<div class="coin-what__inner">
+					<!-- box-item -->
+					<div class="coin-what__box">
+						<div class="coin-what__box-img">
+							<img src="./images/coin/what/1.svg" alt="">
+						</div>
+						<div class="coin-what__box-content">
+							<h6>Earn Interest</h6>
+							<p>Earn daily compounding interest on your BTC, at industry-leading rates with our Earn on
+								Crypto suite.</p>
+						</div>
+					</div>
+					<!-- end box-item -->
+					<!-- box-item -->
+					<div class="coin-what__box">
+						<div class="coin-what__box-img">
+							<img src="./images/coin/what/2.svg" alt="">
+						</div>
+						<div class="coin-what__box-content">
+							<h6>Exchange Seanlessly</h6>
+							<p>Swap any asset for BTC with lightning speed and no price fluctuation on Nexo’s Crypto
+								Exchange.</p>
+						</div>
+					</div>
+					<!-- end box-item -->
+					<!-- box-item -->
+					<div class="coin-what__box">
+						<div class="coin-what__box-img">
+							<img src="./images/coin/what/3.svg" alt="">
+						</div>
+						<div class="coin-what__box-content">
+							<h6>Borrow Instantly</h6>
+							<p>Borrow funds from 0% APR without selling your BTC with Nexo’s Instant Crypto Credit
+								Lines.</p>
+						</div>
+					</div>
+					<!-- end box-item -->
+					<!-- box-item -->
+					<div class="coin-what__box">
+						<div class="coin-what__box-img">
+							<img src="./images/coin/what/4.svg" alt="">
+						</div>
+						<div class="coin-what__box-content">
+							<h6>Spend without Selling</h6>
+							<p>Spend the value of your Bitcoin without selling it, using the world’s first BTC-backed
+								credit card.</p>
+						</div>
+					</div>
+					<!-- end box-item -->
+					<!-- box-item -->
+					<div class="coin-what__box">
+						<div class="coin-what__box-img">
+							<img src="./images/coin/what/5.svg" alt="">
+						</div>
+						<div class="coin-what__box-content">
+							<h6>Boost Your Position</h6>
+							<p>Borrow funds and exchange up to 3x more BTC to grow your position with the Nexo Booster.
+							</p>
+						</div>
+					</div>
+					<!-- end box-item -->
+					<!-- box-item -->
+					<div class="coin-what__box">
+						<div class="coin-what__box-img">
+							<img src="./images/coin/what/6.svg" alt="">
+						</div>
+						<div class="coin-what__box-content">
+							<h6>Send Bitcoin</h6>
+							<p>Make free, instant BTC transfers to all your friends, family or colleagues as long as
+								they have a Nexo account.</p>
+						</div>
+					</div>
+					<!-- end box-item -->
+				</div>
+			</div>
+		</section>
+		<!-- end coin what -->
+		<!-- faq -->
+		<section class="coin-faq">
+			<div class="container">
+				<h2 class="coin-faq__title">FAQs</h2>
+				<h6 class="coin-faq__subtitle">Find answers to all your questions about buying Bitcoin on Cryptonomy.
+				</h6>
+				<ul class="coin-faq__box">
+					<li class="coin-faq__box-item">
+						<div class="coin-faq__box-ask">
+							<div class='coin-faq__box-img'>
+								<img src="./images/faq.svg" alt="">
+							</div>
+							<h6>How can I buy Bitcoin with a card? Is the purchase instant?</h6>
+						</div>
+						<p class='coin-faq__box-body'>
+							Yes, to both questions. On Nexo, all purchases with debit and credit cards are instant,
+							meaning that your newly acquired funds will appear in your Nexo account immediately after
+							you complete the process.
+							Yes, to both questions. On Nexo, all purchases with debit and credit cards are instant,
+							meaning that your newly acquired funds will appear in your Nexo account immediately after
+							you complete the process.
+							Yes, to both questions. On Nexo, all purchases with debit and credit cards are instant,
+							meaning that your newly acquired funds will appear in your Nexo account immediately after
+							you complete the process.
+						</p>
+					</li>
+					<li class="coin-faq__box-item">
+						<div class="coin-faq__box-ask">
+							<div class='coin-faq__box-img'>
+								<img src="./images/faq.svg" alt="">
+							</div>
+							<h6>What is the quickest way to buy Bitcoin with a bank transfer?</h6>
+						</div>
+						<p class='coin-faq__box-body'>
+							Yes, to both questions. On Nexo, all purchases with debit and credit cards are instant,
+							meaning that your newly acquired funds will appear in your Nexo account immediately after
+							you complete the process.
+						</p>
+					</li>
+					<li class="coin-faq__box-item">
+						<div class="coin-faq__box-ask">
+							<div class='coin-faq__box-img'>
+								<img src="./images/faq.svg" alt="">
+							</div>
+							<h6>Is there a minimum purchase amount for Bitcoin on Cryptonomy?</h6>
+						</div>
+						<p class='coin-faq__box-body'>
+							Yes, to both questions. On Nexo, all purchases with debit and credit cards are instant,
+							meaning that your newly acquired funds will appear in your Nexo account immediately after
+							you complete the process.
+						</p>
+					</li>
+					<li class="coin-faq__box-item">
+						<div class="coin-faq__box-ask">
+							<div class='coin-faq__box-img'>
+								<img src="./images/faq.svg" alt="">
+							</div>
+							<h6>How to get to 0.5% in crypto rewards on your BTC purchases?</h6>
+						</div>
+						<p class='coin-faq__box-body'>
+							Yes, to both questions. On Nexo, all purchases with debit and credit cards are instant,
+							meaning that your newly acquired funds will appear in your Nexo account immediately after
+							you complete the process.
+						</p>
+					</li>
+					<li class="coin-faq__box-item">
+						<div class="coin-faq__box-ask">
+							<div class='coin-faq__box-img'>
+								<img src="./images/faq.svg" alt="">
+							</div>
+							<h6>Can I earn interest on BTC through Cryptonomy?</h6>
+						</div>
+						<p class='coin-faq__box-body'>
+							Yes, to both questions. On Nexo, all purchases with debit and credit cards are instant,
+							meaning that your newly acquired funds will appear in your Nexo account immediately after
+							you complete the process.
+						</p>
+					</li>
+					<li class="coin-faq__box-item">
+						<div class="coin-faq__box-ask">
+							<div class='coin-faq__box-img'>
+								<img src="./images/faq.svg" alt="">
+							</div>
+							<h6>How does Nexo protect my BTC?</h6>
+						</div>
+						<p class='coin-faq__box-body'>
+							Yes, to both questions. On Nexo, all purchases with debit and credit cards are instant,
+							meaning that your newly acquired funds will appear in your Nexo account immediately after
+							you complete the process.
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- end faq -->
+		<!-- Browse Other Assets -->
+		<div class="coin-assets">
+			<div class="container">
+				<div class="coin-assets__top">
+					<p class='coin-assets__top-text'>Market is down</p>
+					<div class="box-right">
+						<button class='active' id='button_top_movers_coin'>Top Movers</button>
+						<button id='button_top_recently_coin'>Recently Added</button>
+						<button id='button_top_market_coin'>Closest Market Cap</button>
+						<span class='' id='button_top_span_coin'></span>
+					</div>
+				</div>
+				<!-- one tab -->
+				<div class="coins-assets__tab-content d-block" id='tab_content_movers_coin'>
+					<ul class="coins-assets__tab-list">
+						<!-- one -->
+						<li class="coins-assets__tab-item">
+							<div class='box-name'>
+								<div class="box-name__image">
+									<img src="./images/coin/other/1.svg" alt="">
+								</div>
+								<div class="df-col">
+									<h6>UniSwap</h6>
+									<p>UNI</p>
+								</div>
+							</div>
+							<div class="box-info up">
+								<div class="box-info__top up">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M19 16L12 8L5 16" fill="#00B881" />
+									</svg>
+									<span>15.29%</span>
+								</div>
+								<div class="box-info__top down">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M5 8L12 16L19 8" fill="#EC524A" />
+									</svg>
+									<span>15.29%</span>
+								</div>
+								<div class="box-info__price">$6.21</div>
+							</div>
+						</li>
+						<!-- end one -->
+						<!-- two -->
+						<li class="coins-assets__tab-item">
+							<div class='box-name'>
+								<div class="box-name__image">
+									<img src="./images/coin/other/2.svg" alt="">
+								</div>
+								<div class="df-col">
+									<h6>SushiSwap</h6>
+									<p>SUSHI</p>
+								</div>
+							</div>
+							<div class="box-info up">
+								<div class="box-info__top up">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M19 16L12 8L5 16" fill="#00B881" />
+									</svg>
+									<span>11.97%</span>
+								</div>
+								<div class="box-info__top down">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M5 8L12 16L19 8" fill="#EC524A" />
+									</svg>
+									<span>15.29%</span>
+								</div>
+								<div class="box-info__price">$1.14</div>
+							</div>
+						</li>
+						<!-- end two -->
+						<!-- three -->
+						<li class="coins-assets__tab-item">
+							<div class='box-name'>
+								<div class="box-name__image">
+									<img src="./images/coin/other/3.svg" alt="">
+								</div>
+								<div class="df-col">
+									<h6>Optimism</h6>
+									<p>OP</p>
+								</div>
+							</div>
+							<div class="box-info up">
+								<div class="box-info__top up">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M19 16L12 8L5 16" fill="#00B881" />
+									</svg>
+									<span>8.19%</span>
+								</div>
+								<div class="box-info__top down">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M5 8L12 16L19 8" fill="#EC524A" />
+									</svg>
+									<span>15.29%</span>
+								</div>
+								<div class="box-info__price">$1.83</div>
+							</div>
+						</li>
+						<!-- end three -->
+						<!-- four -->
+						<li class="coins-assets__tab-item">
+							<div class='box-name'>
+								<div class="box-name__image">
+									<img src="./images/coin/other/4.svg" alt="">
+								</div>
+								<div class="df-col">
+									<h6>Sweat Economy</h6>
+									<p>SWEAT</p>
+								</div>
+							</div>
+							<div class="box-info up">
+								<div class="box-info__top up">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M19 16L12 8L5 16" fill="#00B881" />
+									</svg>
+									<span>7.99%</span>
+								</div>
+								<div class="box-info__top down">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M5 8L12 16L19 8" fill="#EC524A" />
+									</svg>
+									<span>15.29%</span>
+								</div>
+								<div class="box-info__price">$0.01051</div>
+							</div>
+						</li>
+						<!-- end four -->
+						<!-- five -->
+						<li class="coins-assets__tab-item">
+							<div class='box-name'>
+								<div class="box-name__image">
+									<img src="./images/coin/other/5.svg" alt="">
+								</div>
+								<div class="df-col">
+									<h6>Aave</h6>
+									<p>AAVE</p>
+								</div>
+							</div>
+							<div class="box-info up">
+								<div class="box-info__top up">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M19 16L12 8L5 16" fill="#00B881" />
+									</svg>
+									<span>6.65%</span>
+								</div>
+								<div class="box-info__top down">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M5 8L12 16L19 8" fill="#EC524A" />
+									</svg>
+									<span>15.29%</span>
+								</div>
+								<div class="box-info__price">$96.39</div>
+							</div>
+						</li>
+						<!-- end five -->
+						<!-- six -->
+						<li class="coins-assets__tab-item">
+							<div class='box-name'>
+								<div class="box-name__image">
+									<img src="./images/coin/other/6.svg" alt="">
+								</div>
+								<div class="df-col">
+									<h6>Convex Finance</h6>
+									<p>CVX</p>
+								</div>
+							</div>
+							<div class="box-info up">
+								<div class="box-info__top up">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M19 16L12 8L5 16" fill="#00B881" />
+									</svg>
+									<span>6.17%</span>
+								</div>
+								<div class="box-info__top down">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M5 8L12 16L19 8" fill="#EC524A" />
+									</svg>
+									<span>15.29%</span>
+								</div>
+								<div class="box-info__price">$3.72</div>
+							</div>
+						</li>
+						<!-- end six -->
+					</ul>
+				</div>
+				<!-- end one tab -->
+				<!-- two tab -->
+				<div class="coins-assets__tab-content " id='tab_content_recently_coin'>
+					<ul class="coins-assets__tab-list">
+
+						<!-- three -->
+						<li class="coins-assets__tab-item">
+							<div class='box-name'>
+								<div class="box-name__image">
+									<img src="./images/coin/other/3.svg" alt="">
+								</div>
+								<div class="df-col">
+									<h6>Optimism</h6>
+									<p>OP</p>
+								</div>
+							</div>
+							<div class="box-info up">
+								<div class="box-info__top up">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M19 16L12 8L5 16" fill="#00B881" />
+									</svg>
+									<span>8.19%</span>
+								</div>
+								<div class="box-info__top down">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M5 8L12 16L19 8" fill="#EC524A" />
+									</svg>
+									<span>15.29%</span>
+								</div>
+								<div class="box-info__price">$1.83</div>
+							</div>
+						</li>
+						<!-- end three -->
+						<!-- four -->
+						<li class="coins-assets__tab-item">
+							<div class='box-name'>
+								<div class="box-name__image">
+									<img src="./images/coin/other/4.svg" alt="">
+								</div>
+								<div class="df-col">
+									<h6>Sweat Economy</h6>
+									<p>SWEAT</p>
+								</div>
+							</div>
+							<div class="box-info up">
+								<div class="box-info__top up">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M19 16L12 8L5 16" fill="#00B881" />
+									</svg>
+									<span>7.99%</span>
+								</div>
+								<div class="box-info__top down">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M5 8L12 16L19 8" fill="#EC524A" />
+									</svg>
+									<span>15.29%</span>
+								</div>
+								<div class="box-info__price">$0.01051</div>
+							</div>
+						</li>
+						<!-- end four -->
+						<!-- one -->
+						<li class="coins-assets__tab-item">
+							<div class='box-name'>
+								<div class="box-name__image">
+									<img src="./images/coin/other/1.svg" alt="">
+								</div>
+								<div class="df-col">
+									<h6>UniSwap</h6>
+									<p>UNI</p>
+								</div>
+							</div>
+							<div class="box-info up">
+								<div class="box-info__top up">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M19 16L12 8L5 16" fill="#00B881" />
+									</svg>
+									<span>15.29%</span>
+								</div>
+								<div class="box-info__top down">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M5 8L12 16L19 8" fill="#EC524A" />
+									</svg>
+									<span>15.29%</span>
+								</div>
+								<div class="box-info__price">$6.21</div>
+							</div>
+						</li>
+						<!-- end one -->
+						<!-- two -->
+						<li class="coins-assets__tab-item">
+							<div class='box-name'>
+								<div class="box-name__image">
+									<img src="./images/coin/other/2.svg" alt="">
+								</div>
+								<div class="df-col">
+									<h6>SushiSwap</h6>
+									<p>SUSHI</p>
+								</div>
+							</div>
+							<div class="box-info up">
+								<div class="box-info__top up">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M19 16L12 8L5 16" fill="#00B881" />
+									</svg>
+									<span>11.97%</span>
+								</div>
+								<div class="box-info__top down">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M5 8L12 16L19 8" fill="#EC524A" />
+									</svg>
+									<span>15.29%</span>
+								</div>
+								<div class="box-info__price">$1.14</div>
+							</div>
+						</li>
+						<!-- end two -->
+					</ul>
+				</div>
+				<!-- end two tab -->
+				<!-- tree tab -->
+				<div class="coins-assets__tab-content" id='tab_content_market_coin'>
+					<ul class="coins-assets__tab-list">
+						<!-- four -->
+						<li class="coins-assets__tab-item">
+							<div class='box-name'>
+								<div class="box-name__image">
+									<img src="./images/coin/other/4.svg" alt="">
+								</div>
+								<div class="df-col">
+									<h6>Sweat Economy</h6>
+									<p>SWEAT</p>
+								</div>
+							</div>
+							<div class="box-info up">
+								<div class="box-info__top up">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M19 16L12 8L5 16" fill="#00B881" />
+									</svg>
+									<span>7.99%</span>
+								</div>
+								<div class="box-info__top down">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M5 8L12 16L19 8" fill="#EC524A" />
+									</svg>
+									<span>15.29%</span>
+								</div>
+								<div class="box-info__price">$0.01051</div>
+							</div>
+						</li>
+						<!-- end four -->
+						<!-- five -->
+						<li class="coins-assets__tab-item">
+							<div class='box-name'>
+								<div class="box-name__image">
+									<img src="./images/coin/other/5.svg" alt="">
+								</div>
+								<div class="df-col">
+									<h6>Aave</h6>
+									<p>AAVE</p>
+								</div>
+							</div>
+							<div class="box-info up">
+								<div class="box-info__top up">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M19 16L12 8L5 16" fill="#00B881" />
+									</svg>
+									<span>6.65%</span>
+								</div>
+								<div class="box-info__top down">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M5 8L12 16L19 8" fill="#EC524A" />
+									</svg>
+									<span>15.29%</span>
+								</div>
+								<div class="box-info__price">$96.39</div>
+							</div>
+						</li>
+						<!-- end five -->
+						<!-- one -->
+						<li class="coins-assets__tab-item">
+							<div class='box-name'>
+								<div class="box-name__image">
+									<img src="./images/coin/other/1.svg" alt="">
+								</div>
+								<div class="df-col">
+									<h6>UniSwap</h6>
+									<p>UNI</p>
+								</div>
+							</div>
+							<div class="box-info up">
+								<div class="box-info__top up">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M19 16L12 8L5 16" fill="#00B881" />
+									</svg>
+									<span>15.29%</span>
+								</div>
+								<div class="box-info__top down">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M5 8L12 16L19 8" fill="#EC524A" />
+									</svg>
+									<span>15.29%</span>
+								</div>
+								<div class="box-info__price">$6.21</div>
+							</div>
+						</li>
+						<!-- end one -->
+						<!-- two -->
+						<li class="coins-assets__tab-item">
+							<div class='box-name'>
+								<div class="box-name__image">
+									<img src="./images/coin/other/2.svg" alt="">
+								</div>
+								<div class="df-col">
+									<h6>SushiSwap</h6>
+									<p>SUSHI</p>
+								</div>
+							</div>
+							<div class="box-info up">
+								<div class="box-info__top up">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M19 16L12 8L5 16" fill="#00B881" />
+									</svg>
+									<span>11.97%</span>
+								</div>
+								<div class="box-info__top down">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M5 8L12 16L19 8" fill="#EC524A" />
+									</svg>
+									<span>15.29%</span>
+								</div>
+								<div class="box-info__price">$1.14</div>
+							</div>
+						</li>
+						<!-- end two -->
+						<!-- three -->
+						<li class="coins-assets__tab-item">
+							<div class='box-name'>
+								<div class="box-name__image">
+									<img src="./images/coin/other/3.svg" alt="">
+								</div>
+								<div class="df-col">
+									<h6>Optimism</h6>
+									<p>OP</p>
+								</div>
+							</div>
+							<div class="box-info up">
+								<div class="box-info__top up">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M19 16L12 8L5 16" fill="#00B881" />
+									</svg>
+									<span>8.19%</span>
+								</div>
+								<div class="box-info__top down">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M5 8L12 16L19 8" fill="#EC524A" />
+									</svg>
+									<span>15.29%</span>
+								</div>
+								<div class="box-info__price">$1.83</div>
+							</div>
+						</li>
+						<!-- end three -->
+
+					</ul>
+				</div>
+				<!-- end three tab -->
+			</div>
+		</div>
+		<!-- end Browse Other Assets -->
+		<section class='coin-ready__banner'>
+			<img class='coin-ready__banner-one' src="./images/banner-one.png" alt="">
+			<img src="./images/decor.png" class="coin-ready__banner-bg">
+			<div class="container">
+				<div class="coin-ready__banner-content">
+					<h2 class="coin-ready__banner-content-title">Ready to Start?</h2>
+					<p class="coin-ready__banner-content-text">Buy, earn, swap, and borrow against your crypto instantly
+						and
+						securely on Nexo.</p>
+					<a href="#" class="coin-ready__banner-content-link">Get Started</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="./js/coin-page.js"></script>
+</body>
+
+</html>
